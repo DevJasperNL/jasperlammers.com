@@ -96,7 +96,8 @@ Not decided yet. It is chosen in the design directions phase and then recorded i
 
 - **Host:** Cloudflare Workers with static assets, built by Workers Builds from this GitHub repo. Not Cloudflare Pages. Build settings live in the Cloudflare dashboard; check there before assuming build or deploy commands.
 - **Trigger:** every push to `main` builds and deploys.
-- **Preview:** until cutover the site is only on its workers.dev URL. `public/_headers` sends `X-Robots-Tag: noindex` on every path so the preview is not indexed. Remove it only at cutover (migration Phase 7).
+- **Worker:** `jasperlammers-com`, production branch `main`.
+- **Preview:** until cutover the site is only on https://jasperlammers-com.jasper-lammers.workers.dev/. `public/_headers` sends `X-Robots-Tag: noindex` on every path so the preview is not indexed. Remove it only at cutover (migration Phase 7).
 - **Domain:** the custom domain `jasperlammers.com` is not attached yet; that is Phase 7. The old WordPress site keeps serving the domain until then.
 - No adapter is needed (pure static). Do not add `@astrojs/cloudflare` unless server-side rendering is explicitly requested.
 - Redirects and headers go in `public/_redirects` and `public/_headers` (Workers static assets reads both).
