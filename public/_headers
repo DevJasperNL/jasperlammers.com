@@ -1,0 +1,4 @@
+# Keeps the workers.dev preview out of search results. Remove at cutover (migration Phase 7),
+# when the custom domain is attached.
+/*
+  X-Robots-Tag: noindex
