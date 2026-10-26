@@ -16,16 +16,16 @@ podcast:
 wpId: 160
 ---
 
-What is our familiar existence? Seemingly a silly question. As I look out of the window I see the sun shining, trains passing by and people living their lives. This is what feels as our familiar existence. The world we expect to still be there when we wake up from a nights sleep. The world that was here before we were born and the world that will continue after we are long gone. The physical world.
+What is our familiar existence? Seemingly a silly question. As I look out of the window I see the sun shining, trains passing by and people living their lives. This is what feels as our familiar existence. The world we expect to still be there when we wake up from a night's sleep. The world that was here before we were born and the world that will continue after we are long gone. The physical world.
 
 But what is it really?
 
-We are very good at understanding the physical world because it is so important to our survival. We have to know that if we fall of a cliff or don’t get food in time, we die. Our brains developed not only to understand these concepts, but to live them. That’s what makes them so familiar.  
+We are very good at understanding the physical world because it is so important to our survival. We have to know that if we fall off a cliff or don’t get food in time, we die. Our brains developed not only to understand these concepts, but to live them. That’s what makes them so familiar.  
 But even though we literally live and breathe the physical, it might just be part of the truth about our existence.
 
 For what ultimately is our existence, is not the parts that construct us, but our mind itself. Out of all the things we know or think to know about reality, this is the one thing we actually know -or rather feel- to exist. Our local existence: consciousness.
 
-> Cogito, ergo sum (I think, therefor I am)
+> Cogito, ergo sum (I think, therefore I am)
 > 
 > — *René Descartes*
 

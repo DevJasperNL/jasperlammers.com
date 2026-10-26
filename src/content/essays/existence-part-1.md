@@ -16,16 +16,16 @@ podcast:
 wpId: 33
 ---
 
-Existence is not the chair you sit in nor the air you breathe. It is not the molecules that build you, the space you move though or the time that ages you. Everything we know is but one entity in the ocean we would call existence.
+Existence is not the chair you sit in nor the air you breathe. It is not the molecules that build you, the space you move through or the time that ages you. Everything we know is but one entity in the ocean we would call existence.
 
-I’ve often thought about the nature of existence, reality itself. Even though many have past my mind, there is one idea in particular that I would like to share. This is part one of my first existence series.  
+I’ve often thought about the nature of existence, reality itself. Even though many have passed my mind, there is one idea in particular that I would like to share. This is part one of my first existence series.  
 Some of my ideas might be based on assumptions. But hey, what good theory about existence itself doesn’t? ;)  
 Try to keep an open mind and enjoy the ride.
 
-When contemplating existence it is tempting to start with our own reference frame. The dimensions we live in, the things we think to understand. We exist in spacial dimensions, does everything exist in spacial dimensions? If space has an end, what is beyond? And how about time, does it have a start and end?
+When contemplating existence it is tempting to start with our own reference frame. The dimensions we live in, the things we think to understand. We exist in spatial dimensions, does everything exist in spatial dimensions? If space has an end, what is beyond? And how about time, does it have a start and end?
 
 This way of thinking about existence might be of practical use, as we explore our own little shell of “local” existence. But it will never bring us closer to what real existence is. For molecules might be formed from atoms and atoms from quarks, but what lies beyond? Even if our dimensions are quantized and we get to the bottom. What would we really have learned about existence itself?
 
-To truly get a fresh perspective, one should look beyond the world we live in. Not into existence we are used too, but into the existence that may lie beyond. Forever unreachable by our instruments and senses. Possibly only ever attainable by our imagination.
+To truly get a fresh perspective, one should look beyond the world we live in. Not into existence we are used to, but into the existence that may lie beyond. Forever unreachable by our instruments and senses. Possibly only ever attainable by our imagination.
 
 If our reality allows for the secret of existence to be discovered, I believe it to be there. For the quest for existence, is a quest of the mind.

@@ -20,7 +20,7 @@ Consciousness, qualia, sentience, wakefulness. Words we have difficulty describi
 
 Consciousness is a subject open to interpretation. This is the reason why there are many theories and opinions about this subject. But every interpretation of what consciousness is, does have consequence. In this series, I will discuss these interpretations and their consequences. Existing ones, and possibly a few of my own.
 
-The more we study the world, the better our understanding of it becomes. But no matter how well we seem to understand our physical world. our experience, our consciousness is still a mystery. Our physical way of looking at the world could do fine without it. Without consciousness the sun would still rise every morning, oceans would still have waves and electrical signals would still go through human brains to dictate their behaviour. People without consciousness (philosophical zombies) would still go to work, interact, play and otherwise live their lives. Yet, none of those things would be experienced in the fashion you experience. Depending on definition, it would not be experienced at all.
+The more we study the world, the better our understanding of it becomes. But no matter how well we seem to understand our physical world. Our experience, our consciousness is still a mystery. Our physical way of looking at the world could do fine without it. Without consciousness the sun would still rise every morning, oceans would still have waves and electrical signals would still go through human brains to dictate their behaviour. People without consciousness (philosophical zombies) would still go to work, interact, play and otherwise live their lives. Yet, none of those things would be experienced in the fashion you experience. Depending on definition, it would not be experienced at all.
 
 But from our own experience, we know this is not true. Even if your actions are being dictated by the rules of physics, you do experience them. Even though it cannot be proven by our sciences, our way of making sense of the world, you know it to be true. Even though you don’t have any explanation for it yourself, you are conscious.
 
@@ -83,7 +83,7 @@ And because science has shown its value so often, it only makes sense we would l
 Sadly however, one of the aspects of the scientific method, is objective observation. And the fact that we only observe our own consciousness makes it an inherently subjective one.  
 Besides that, we can not even define what consciousness is. Even though everyone probably has an idea what we mean by the word, we often have trouble putting it into words ourselves. Let alone make a clear, measurable definition for it.
 
-But even with these facts, our past discoveries within the physical world often make us believe that not only the physical but also consciousness consists out of fundamental particles, forces or building blocks of any kind. Even though at this point it would be more a believe than anything else, we could still ask ourselves what this would mean for consciousness.
+But even with these facts, our past discoveries within the physical world often make us believe that not only the physical but also consciousness consists out of fundamental particles, forces or building blocks of any kind. Even though at this point it would be more a belief than anything else, we could still ask ourselves what this would mean for consciousness.
 
 And why not? We experience consciousness as one of, if not THE true existence. Would it not make sense to be on par with all other building blocks we have discovered and predicted? Consciousness not as a capability, but consciousness as something fundamental. An objective force of nature.
 
@@ -96,7 +96,7 @@ What would it mean if consciousness were to be more like an atom, or even gravit
 
 How would that explain us? The experience we currently have? Surely we are conscious of more than just one cell. We have thoughts, feelings and memories. All of these we have observed to be a result of vast networks of neurons working together. Suggesting we are more like the chocolate cake after all.
 
-Or could would our accumulation of consciousness explain exactly what we observe? Not unlike the accumulation of all gravitational forces on Earth keep us grounded.
+Or could our accumulation of consciousness explain exactly what we observe? Not unlike the accumulation of all gravitational forces on Earth keep us grounded.
 
 ## **Wrapping up**  
 
@@ -113,5 +113,3 @@ And is this not exactly the same question we are asking about consciousness? Sur
 
 So in the end I ask you: Is consciousness forever a subjective experience that only exists in the world we observe as humans or do you think consciousness is quantifiable and objective? Or could it be something different altogether?  
 Whatever your answer to those questions might be, I do hope that this article has made you see the wonder of what consciousness is. And maybe even, the wonder of existence itself.
-
-https://youtu.be/yG9gNvkh7Ig

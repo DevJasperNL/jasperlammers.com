@@ -22,7 +22,7 @@ In a 2016 code conference, Elon Musk famously argues[^2] that there is a high po
 
 This article does not contain proofs or beliefs about consciousness. Its purpose is to challenge the reader to think about the consequences of believing consciousness is possible in a deterministic simulation.
 
-The structure of this article is as follows. First, we define consciousness as it will be referred to throughout this article. Second, this article contains a brief introduction into the simulation hypotheses, recently popularized by Elon Must, and the simulation argument as described by philosopher Nick Bostrom. Third, there will be a chapter explaining deterministic systems. Then follow the thought experiments, which will be taken one assumption at the time divided over several chapters ending with the reverse simulation argument, an argument strengthened by both the thought experiments in this article, and the simulation argument of Nick Bostrom. Lastly, this article contains a reflection on the thought experiments, followed be a short conclusion in which the article is summarized.
+The structure of this article is as follows. First, we define consciousness as it will be referred to throughout this article. Second, this article contains a brief introduction into the simulation hypothesis, recently popularized by Elon Musk, and the simulation argument as described by philosopher Nick Bostrom. Third, there will be a chapter explaining deterministic systems. Then follow the thought experiments, which will be taken one assumption at a time divided over several chapters ending with the reverse simulation argument, an argument strengthened by both the thought experiments in this article, and the simulation argument of Nick Bostrom. Lastly, this article contains a reflection on the thought experiments, followed by a short conclusion in which the article is summarized.
 
 ## Definition of Consciousness
 
@@ -109,23 +109,23 @@ So what do you think? Could such a distributed system also be conscious? If you 
 
 ## Delayed Execution and Cloning
 
-But why linger on spatial dimensions alone, if we can make our experiment even more complex. If we combine the assumptions that both spatial dimensions and execution time are flexible when it comes to consciousness (assuming you are still here because you still believe that), we can ask another question: What if we were to discontinue our simulation, save the state to a medium (arguable a very large USB stick), and start the simulation on another machine?
+But why linger on spatial dimensions alone, if we can make our experiment even more complex. If we combine the assumptions that both spatial dimensions and execution time are flexible when it comes to consciousness (assuming you are still here because you still believe that), we can ask another question: What if we were to discontinue our simulation, save the state to a medium (arguably a very large USB stick), and start the simulation on another machine?
 
 If it hasn’t already, this will probably start to feel unnatural or unrealistic (to us, spatial beings): how do two completely separate states of information connect in forming one conscious experience? Sure, we accept that it doesn't matter for the output we perceive on the outside, but is it still the same consciousness? Still the same uninterrupted experience you could be having today?
 
 Well...who knows? You are free to believe whatever you like. But before you conclude that this leap is the one too big to take, I ask you: should you not have had the exact same reservations for two states separated by time?
 
-Regardless of what you believe at this point, this step also allows for another interesting thought experiment: What would happen if we were to also continue our original simulation again? As our simulation is deterministic, both of them will proceed at exactly the same way. Would we have two identical instances of consciousness?[^17]
+Regardless of what you believe at this point, this step also allows for another interesting thought experiment: What would happen if we were to also continue our original simulation again? As our simulation is deterministic, both of them will proceed in exactly the same way. Would we have two identical instances of consciousness?[^17]
 
 ## The Reverse Simulation Argument
 
 After adding one more condition to our simulation and combining it with all previous assumptions, there is another interesting thing that can be done: we can run our simulation backwards.
 
-If we implement our simulation in a way that every state does not only provide the information for us to calculate the next, but also allows us to calculate what the previous state would have been, our deterministic simulation can be ran in reverse. Instead of defining the beginning of the simulation, we could define how we want the simulation to end and simulate it back to a possible starting state.
+If we implement our simulation in a way that every state does not only provide the information for us to calculate the next, but also allows us to calculate what the previous state would have been, our deterministic simulation can be run in reverse. Instead of defining the beginning of the simulation, we could define how we want the simulation to end and simulate it back to a possible starting state.
 
 Note that concepts like forwards, backwards and reverse are all relative terms. Even though we would define the simulation as going in reverse, it is still a simulation progressing over time. Changes are merely happening differently (e.g. objects falling up, memories disappearing after an event, etc.).
 
-The expected result would be that even though the simulation time would run in reverse, the perceived time of the simulation consciousness does not. As the simulated past (future in base time) can be remembered and the future (past in base time) cannot, the resulting consciousness might not be effected, while from the perspective of the ones running the simulation, it is running in reverse direction.
+The expected result would be that even though the simulation time would run in reverse, the perceived time of the simulation consciousness does not. As the simulated past (future in base time) can be remembered and the future (past in base time) cannot, the resulting consciousness might not be affected, while from the perspective of the ones running the simulation, it is running in reverse direction.
 
 ![](./images/conscious-deterministic-simulation/Reverse-simulation-times.png)
 
@@ -166,8 +166,8 @@ Whatever the case, it is up to you what you believe.
 [^11]: Even though I use terms like “simulated brain” and “simulated reality” I purposely refer to the conscious experience as “simulation consciousness” rather than “simulated consciousness” as the purpose of this article is to think under the pretense that the conscious experience that results from the simulated brain is, in fact, real.
 [^12]: Even though determinism makes this fact more obvious, this could also be the case without determinism: Any simulation that would run independent of "real world magic" would be a simulation without free will.
 [^13]: E.g. Compatibilism states that free will is compatible with determinism. See [https://en.wikipedia.org/wiki/Free\_will#Compatibilism](https://en.wikipedia.org/wiki/Free_will#Compatibilism)
-[^14]: Computer scientists might mumble something about floating point rounding errors on different machines, but we all know that is besides the point here ;)
-[^15]: For the computer scientists among you: keep in mind that state does not necessarily refer to a complete new state of the entire simulated brain. Depending on the implementation, a new state could occur after changing as much a single value in a simulated neuron.
+[^14]: Computer scientists might mumble something about floating point rounding errors on different machines, but we all know that is beside the point here ;)
+[^15]: For the computer scientists among you: keep in mind that state does not necessarily refer to a complete new state of the entire simulated brain. Depending on the implementation, a new state could occur after changing as much as a single value in a simulated neuron.
 [^16]: Imagine that measures will be taken to keep the simulation deterministic.
 [^17]: For more about this step of the thought experiment, check out the Ship of Theseus: [https://en.wikipedia.org/wiki/Ship\_of\_Theseus](https://en.wikipedia.org/wiki/Ship_of_Theseus)
 [^18]: [https://en.wikipedia.org/wiki/Butterfly\_effect](https://en.wikipedia.org/wiki/Butterfly_effect)

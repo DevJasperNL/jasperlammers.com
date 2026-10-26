@@ -1,5 +1,5 @@
 ---
-title: "Why the origin of consciousness is will always be a belief"
+title: "Why the origin of consciousness will always be a belief"
 slug: "origin-of-consciousness"
 firstPublished: "2020-01-05"
 lastModified: "2020-01-05"

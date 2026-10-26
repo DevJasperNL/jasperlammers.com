@@ -18,7 +18,7 @@ Even though I am not the superstitious type, deep down it is something I (want t
 
 In the western world, karma is a concept that is commonly thought of when something unexpectedly good or bad happens. Take the example of playing a game: karma is mentioned when someone who purposely opposed you, gets some bad luck the next turn. And we like it more when kind people take the win (but of course not as much as we like to win ourselves ;) )
 
-And this is what I used to think all there is too karma. Act like a jerk, and people won't do good things for you. Be a kind person, and good things come to you because people feel like you deserve it.
+And this is what I used to think all there is to karma. Act like a jerk, and people won't do good things for you. Be a kind person, and good things come to you because people feel like you deserve it.
 
 Then of course there is still the subconscious vibe you give off to the people around you, but the point remains the same: karma is a people thing.
 
@@ -30,7 +30,7 @@ Well, in this article I will make a case for just that...sort of. But probably a
 
 ## Definition
 
-Before we dive into things, I want to clarify that this article will not make a case for any specific interpretation of (the law of) karma. It will merely refer to the concept of cause and effect we refer to in everyday life. The notion of “what goes around, comes around” if it were.
+Before we dive into things, I want to clarify that this article will not make a case for any specific interpretation of (the law of) karma. It will merely refer to the concept of cause and effect we refer to in everyday life. The notion of “what goes around, comes around” as it were.
 
 ## You
 
@@ -62,13 +62,13 @@ And as our actions are only able to influence the future, the connection to your
 
 ## A State of Consciousness
 
-And let’s say we accept the idea that we are no longer the person we were, and will be a different person in the future. What will happen if the explore this idea further? Surely we were a different person 10 years ago. But how about 5 years? A single year? A month?
+And let’s say we accept the idea that we are no longer the person we were, and will be a different person in the future. What will happen if we explore this idea further? Surely we were a different person 10 years ago. But how about 5 years? A single year? A month?
 
 Accepting you were a different person 10 years ago has to mean that somewhere along the line, you changed from one person into another.
 
 The philosophy of flow and change are deep topics of themselves. Of course, these discussions will depend heavily on definition: What is it to be you? What does it mean to be a different person?
 
-As this is an article about your experience, you are free to define this for yourself. Maybe you define yourself to be the person you are this day. Maybe you continue this trail of thought and decide you are only the person you are at this very moment. A single state in time.
+As this is an article about your experience, you are free to define this for yourself. Maybe you define yourself to be the person you are this day. Maybe you continue this train of thought and decide you are only the person you are at this very moment. A single state in time.
 
 No matter how you define your moment of being, it is a way to separate your past, present and future. Instead of seeing yourself as a person living from birth to death and having a single large consciousness over your lifetime, you can interpret yourself as a conscious being living only in a moment, a conscious state. The only thing connecting future and past conscious states to your feeling of “you”, is that those states are also conscious of your past memories and imagination of the future, creating the illusion of the continued consciousness you experience.
 
@@ -82,7 +82,7 @@ The image below is a simple representation of this idea: You as a collection of 
 
 ![](./images/the-case-for-karma/figure-1.png)
 
-(The above representation is linear to make the argument easier to understand. Note that the concept of time is not actually needed for this abstraction. For the sake of simplicity, I will not go into that this article.)
+(The above representation is linear to make the argument easier to understand. Note that the concept of time is not actually needed for this abstraction. For the sake of simplicity, I will not go into that in this article.)
 
 ## Others
 

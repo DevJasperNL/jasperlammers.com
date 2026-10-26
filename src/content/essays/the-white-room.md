@@ -16,7 +16,7 @@ wpId: 157
 
 Imagine being in a perfectly round, white room. You’re standing on one half of the room, and as you look around you notice someone else is there.  
 Except it is not someone else, it’s you.  
-A perfect clone of yourself has appeared on exactly the opposite side of the room. Your clone is wearing exactly the clothes you are, is standing in the same way you are standing and even has the same expression of confusion you have. Every molecule, every atom, every quark is encountered for. The clone is a perfect physical copy.  
+A perfect clone of yourself has appeared on exactly the opposite side of the room. Your clone is wearing exactly the clothes you are, is standing in the same way you are standing and even has the same expression of confusion you have. Every molecule, every atom, every quark is accounted for. The clone is a perfect physical copy.  
 A perfect copy of you.
 
 If you ignore the influence of the world outside the room and you were to find yourself in this situation. Do you think you could ever have a conversation with your clone?

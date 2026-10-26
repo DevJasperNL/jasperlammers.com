@@ -20,7 +20,7 @@ wpId: 99
 
 Even though the concept of everything is fathomable, its actual form is not. It is an unending sea of unfathomable mystery that only gives rise to islands of fathomable.
 
-Our first island contained nothing from our everyday reality. Nothing about the chair you sit on, the air you breathe, the space you move through or the time that ages you. Instead, it described how “nothing” is but a concept without any bases in existence. A statement that in turn dictates the existence of everything. Not just as a concept, but as a reality. Our most basic and deep reality. A reality so infinite it cannot ever be described or understood. Our minds can but dive into that infinite sea in the hope to explore more of the islands we hold as familiar. Islands that can only be observed by our minds.
+Our first island contained nothing from our everyday reality. Nothing about the chair you sit on, the air you breathe, the space you move through or the time that ages you. Instead, it described how “nothing” is but a concept without any basis in existence. A statement that in turn dictates the existence of everything. Not just as a concept, but as a reality. Our most basic and deep reality. A reality so infinite it cannot ever be described or understood. Our minds can but dive into that infinite sea in the hope to explore more of the islands we hold as familiar. Islands that can only be observed by our minds.
 
 But how does one continue? If our local existence is but an island of fathomable, we now merely know about the ocean of unfathomable it resides in.
 
