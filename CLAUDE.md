@@ -91,7 +91,13 @@ Do not add, rename or remove pages, change essay slugs, move the feed or change 
 
 ## Design system
 
-Not decided yet. It is chosen in the design directions phase and then recorded in `docs/design.md`, with a summary here.
+Direction A ("Cousin"), chosen 2026-10-26. Full decisions in `docs/design.md`; read it before changing anything visual.
+
+- **Fonts:** Figtree Variable for headings and interface (600 to 800, never 900), Source Serif 4 Variable (optical sizes) for reading. Self-hosted via Fontsource.
+- **Tokens** (`@theme` in `src/styles/global.css`), light / dark: `paper` #FAF7F2 / #1A1D21, `ink` #22272E / #E8E4DC, `muted` #5A5F66 / #A8A49C, `accent` (teal) #2C6A63 / #7FC2B8, `rule` #E4DED3 / #33373D, `tint` #EFE9DF / #23272C.
+- **Essays:** 19px Source Serif 4, line height 1.65, 36rem column. Essay pages have no motion.
+- **Dark mode:** follows `prefers-color-scheme`, CSS only, no toggle.
+- **Shared with devjasper.nl:** Figtree and the photo arch. Not shared: blazer blue, 900-weight headings, section bands.
 
 ## Build and deploy
 
