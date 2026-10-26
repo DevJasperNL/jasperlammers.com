@@ -1,0 +1,169 @@
+# Seed data for jasperlammers.com/record (Phase 3, 2026-10-25).
+# Facts only, each with its source. Entry wording and the page intro are Phase 5 copy.
+# Open items filled in by Jasper 2026-10-25 and 2026-10-26; no [TODO] left.
+# GitHub stars/releases come from the API at build time.
+# Dates: YYYY-MM-DD when known, YYYY-MM or YYYY when that is all the source gives.
+
+essays:
+  # One collection entry, never one line per essay (structure.md §2).
+  - title: Essays
+    start: 2018
+    end: 2025
+    href: /essays
+    source: content/jasperlammers.com/essays/ (13 essays, 2018-03-06 to 2025-07-08)
+
+openSource:
+  - name: Occurify
+    repo: Occurify/Occurify
+    start: 2025-03-12
+    source: GitHub API (created_at); devjasper.nl site.ts
+  - name: CodeCasa
+    repo: DevJasperNL/CodeCasa
+    start: 2025-01-28
+    note: Smart home .NET libraries. Formerly CodeCasa.Libraries and NetDaemon.Utils (both URLs 301 to this repo).
+    source: GitHub API
+  - name: CodeCasa.Showcase
+    repo: DevJasperNL/CodeCasa.Showcase
+    start: 2025-04-11
+    note: Smart home implementation example built on CodeCasa. Was "CodeCasa" on the old Work & Publications page.
+    source: GitHub API
+  - name: Reactive.Boolean
+    repo: DevJasperNL/Reactive.Boolean
+    start: 2025-01-27
+    source: GitHub API
+  - name: DependencyInjection.Composite
+    repo: DevJasperNL/DependencyInjection.Composite
+    start: 2026-01-21
+    source: GitHub API
+  - name: NetDaemon contributions
+    href: https://github.com/net-daemon/netdaemon/pulls?q=is%3Apr+author%3ADevJasperNL+is%3Amerged
+    start: 2025-02-06
+    note: 14 merged pull requests as of 2026-10-25 (count from the GitHub API at build time)
+    source: GitHub search API
+
+articles:
+  - title: "I Retired My Hue Bridge. Here's How I Rebuilt Everything It Did (and More) in C#"
+    date: 2026-10-19
+    platform: DEV.to
+    href: https://dev.to/devjaspernl/i-retired-my-hue-bridge-heres-how-i-rebuilt-everything-it-did-and-more-in-c-4178
+    source: DEV.to API
+  - title: "Occurify: Fluent Time Modeling for .NET Developers"
+    date: 2025-04-05
+    platform: DEV.to
+    href: https://dev.to/devjaspernl/occurify-fluent-time-modeling-for-net-developers-3e4n
+    source: DEV.to API
+  - title: "Supercharging Home Assistant Automations: Initial States and Boolean Logic for NetDaemon Rx"
+    date: 2025-01-28
+    platform: DEV.to
+    href: https://dev.to/devjaspernl/supercharging-home-assistant-automations-initial-states-and-boolean-logic-for-netdaemon-rx-3bd5
+    source: DEV.to API
+  # CodeProject is a parked domain: link the first Wayback capture (independent timestamp), then the repo copy.
+  - title: Flexible Tado Schedules using Home Assistant and Node-RED
+    date: 2022-05-19
+    platform: CodeProject
+    wayback: https://web.archive.org/web/20220519014251/https://www.codeproject.com/Articles/5332399/Flexible-Tado-Schedules-using-Home-Assistant-and-N
+    archive: archive/articles/2022-05-19-flexible-tado-schedules-using-home-assistant-and-node.md
+    source: archive file frontmatter
+  - title: "How .NET's Math.Round has Nothing to do with Maths. And That's OK!"
+    date: 2018-12-23
+    platform: CodeProject
+    note: Reached number 3 top article on CodeProject (jasperlammers.com post 2019-01-14)
+    wayback: https://web.archive.org/web/20181224121142/https://www.codeproject.com/Tips/1272542/How-NETs-Math-Round-has-Nothing-to-do-with-Maths-A
+    archive: archive/articles/2018-12-23-how-dotnet-s-math-round-has-nothing-to.md
+    source: archive file frontmatter
+  - title: Continued code execution after (throwing) an Exception
+    date: 2017-12-21
+    platform: CodeProject
+    wayback: https://web.archive.org/web/20171222131044/https://www.codeproject.com/Articles/1221904/Continued-code-execution-after-throwing-an-Excepti
+    archive: archive/articles/2017-12-21-continued-code-execution-after-throwing-an-exception.md
+    source: archive file frontmatter
+  - title: Retaining (and altering) key functions when using Console.ReadKey()
+    date: 2017-06-05
+    platform: CodeProject
+    wayback: https://web.archive.org/web/20170605214131/https://www.codeproject.com/Articles/1189696/Customizing-Windows-Console-Application-Key-Action
+    archive: archive/articles/2017-06-05-retaining-and-altering-key-functions-when-using-console.md
+    source: archive file frontmatter
+  - title: Multithreaded UI in Windows Console Applications
+    date: 2017-05-03
+    platform: CodeProject
+    wayback: https://web.archive.org/web/20170504104037/https://www.codeproject.com/Articles/1184633/Multithreaded-UI-in-Windows-Console-Applications
+    archive: archive/articles/2017-05-03-multithreaded-ui-in-windows-console-applications.md
+    source: archive file frontmatter
+  - title: Using Autocomplete in Windows Console Applications
+    date: 2017-04-16
+    platform: CodeProject
+    wayback: https://web.archive.org/web/20170424180513/https://www.codeproject.com/articles/1182358/
+    archive: archive/articles/2017-04-16-using-autocomplete-in-windows-console-applications.md
+    source: archive file frontmatter
+  - title: The false sense of security in the ING Bankieren (Banking) App
+    date: 2018-06-18
+    platform: LinkedIn
+    href: https://www.linkedin.com/pulse/false-sense-security-dutch-banks-ing-bankieren-banking-lammers
+    archive: archive/articles/2018-06-18-ing-banking-app-security.md
+    note: Date is the jasperlammers.com post; LinkedIn's own date also 2018-06-18
+    source: old WordPress site; old Work & Publications page
+
+projects:
+  - name: Strategic RPS
+    start: 2014
+    end: 2019
+    href: /projects/strategic-rps
+    note: Dormant prototype; no release promise (structure.md). Started 2014, picked up again 2018 (jasperlammers.com post 2018-06-09; start confirmed by Jasper 2026-10-26). First public build 2018-06-07, last devlog 2019-04-04.
+    source: structure.md; old WordPress site
+  - name: Retro Black & White Game Pack
+    start: 2011
+    end: 2012
+    href: /projects/retro-bw-game-pack
+    note: No longer available. Windows release 2011-09-01, trial 2011-11-14, Android 2012-02-27.
+    source: old WordPress site
+  - name: V.I.P. (Video Internet Pipeline), graduation project
+    date: 2011-06
+    href: /projects/vip-graduation
+    links:
+      - https://hbo-kennisbank.nl/details/sharekit_fontys:oai:surfsharekit.nl:c8f3e1d9-8d57-40c9-a253-237129040e5d
+    note: Graduation internship at Memoria Media, 2011-02 to 2011-06; graduated 2011-06-27
+    source: old WordPress site ("Graduated!" post, Work & Publications page)
+
+career:
+  # Recent three from devjasper.nl site.ts; older ones from the old WordPress site. Checked against LinkedIn (structure.md §2).
+  - org: New Media Systems
+    start: 2024
+    end: null
+    href: https://devjasper.nl
+    role: freelance Software Architect/Product Owner/Software Developer via DevJasper
+    source: devjasper.nl site.ts
+  - org: DAF
+    start: 2022
+    end: 2024
+    href: https://devjasper.nl
+    role: freelance Software Developer via DevJasper
+    source: devjasper.nl site.ts
+  - org: Vanderlande
+    start: 2015-06-01
+    end: 2022
+    href: https://devjasper.nl
+    role: C# developer on ADAPTO; later tech lead on STOREPICK
+    source: devjasper.nl site.ts; old WordPress site
+  - org: Hightech ICT
+    start: 2011-09-01
+    end: 2015-05
+    role: Software developer, seconded to client companies
+    clients:
+      - { org: SPS BV, start: 2011-09, end: 2013-03 }
+      - { org: SeaChange International, start: 2013-04, end: 2015-03 }
+    source: old WordPress site; devjasper.nl earlierWork; dates from Jasper (2026-10-25)
+  - org: TNO Automotive
+    start: 2009-09
+    end: 2010-02
+    role: Intern
+    source: Jasper (2026-10-25); devjasper.nl earlierWork
+  - org: Memoria Media
+    start: 2009-07
+    end: 2011-06
+    role: Software engineer (camera system 2009-07 to 2010-03), graduation intern (2011-02 to 2011-06)
+    source: old WordPress site
+
+education:
+  - title: Bachelor degree computing and engineering (cum laude)
+    end: 2011-06
+    source: old WordPress site ("Graduated!" post); HBO Kennisbank record (Fontys)
