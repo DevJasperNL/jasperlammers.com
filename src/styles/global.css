@@ -1,6 +1,8 @@
 @import "tailwindcss";
+@source not "../../archive";
+@source not "../../docs";
 
-/* Default tokens. During the design directions phase each direction overrides them under [data-direction]. */
+/* Default tokens. The chosen direction (A) overrides them under [data-direction] until the real build moves them here. */
 @theme {
   --color-paper: #fbfaf7;
   --color-ink: #1c1b19;

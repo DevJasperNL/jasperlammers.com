@@ -1,20 +1,10 @@
-export type DirectionId = 'a' | 'b' | 'c';
+export type DirectionId = 'a';
 
 export const DIRECTIONS: { id: DirectionId; name: string; summary: string }[] = [
   {
     id: 'a',
     name: 'Cousin',
     summary: 'Figtree and Source Serif 4, teal. Shares devjasper.nl’s heading font and photo arch.',
-  },
-  {
-    id: 'b',
-    name: 'Book page',
-    summary: 'Newsreader with a drop cap and indented paragraphs, rust. Centred and literary. No shared DNA.',
-  },
-  {
-    id: 'c',
-    name: 'Margin',
-    summary: 'Public Sans and Literata, moss. A left margin for labels, dates and headings. No shared DNA.',
   },
 ];
 
