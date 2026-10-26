@@ -51,7 +51,7 @@ Of course, the concept of nothing can never fully be grasped, and this is just m
 
 Therefore, there is something.
 
-![](./images/a-map-of-existence/mapofexistence.png)
+![A map of existence: islands labelled The Known, Fathomable, The Concept of Everything and The Concept of Nothing, with a "You are here" marker, inside a sphere of the Unfathomable; Not Nothing lies outside it](./images/a-map-of-existence/mapofexistence.png)
 
 ## Everything
 

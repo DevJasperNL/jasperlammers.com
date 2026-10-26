@@ -1,37 +1,59 @@
 ---
+import '@fontsource-variable/figtree';
+import '@fontsource-variable/source-serif-4/opsz.css';
+import '@fontsource-variable/source-serif-4/opsz-italic.css';
 import '../styles/global.css';
+import figtree from '@fontsource-variable/figtree/files/figtree-latin-wght-normal.woff2?url';
+import { siteName } from '../data/site';
 
 interface Props {
   title: string;
-  description: string;
-  /** Temporary: selects a design direction's tokens on /directions/. */
-  direction?: string;
+  description?: string;
+  type?: 'website' | 'article';
+  /** Structured data for this page, rendered as JSON-LD. */
+  jsonLd?: Record<string, unknown>;
+  noindex?: boolean;
 }
 
-const { title, description, direction } = Astro.props;
+const { title, description, type = 'website', jsonLd, noindex = false } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL('/og.png', Astro.site);
 ---
 
 <!doctype html>
-<html lang="en" data-direction={direction}>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
-    <meta name="description" content={description} />
-    <link rel="canonical" href={canonicalURL} />
+    {description && <meta name="description" content={description} />}
+    {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonicalURL} />}
+    <link rel="preload" href={figtree} as="font" type="font/woff2" crossorigin />
 
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a1d21" media="(prefers-color-scheme: dark)" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="alternate" type="application/rss+xml" title="Jasper Lammers: essays" href="/rss.xml" />
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Jasper Lammers" />
+    <meta property="og:site_name" content={siteName} />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    {description && <meta property="og:description" content={description} />}
     <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Jasper Lammers" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    {description && <meta name="twitter:description" content={description} />}
+    <meta name="twitter:image" content={ogImage} />
+
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   </head>
   <body class="bg-paper text-ink antialiased">
     <slot />

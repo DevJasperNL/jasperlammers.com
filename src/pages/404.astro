@@ -1,0 +1,18 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import { notFound } from '../data/site';
+
+const link = 'text-accent underline decoration-1 underline-offset-4 hover:decoration-2';
+---
+
+<SiteLayout title={notFound.title} noindex>
+  <div class="mx-auto max-w-3xl px-5 pt-6 md:px-12 md:pt-12">
+    <PageIntro heading={notFound.heading} />
+    <p class="mt-5 max-w-[36rem] font-reading text-xl leading-relaxed">
+      This page doesn't exist, or it moved when the site was rebuilt. Try the <a href="/essays/" class={link}>essays</a>,
+      the <a href="/record/" class={link}>record</a> or the <a href="/projects/" class={link}>projects</a>. Or start at
+      the <a href="/" class={link}>home page</a>.
+    </p>
+  </div>
+</SiteLayout>

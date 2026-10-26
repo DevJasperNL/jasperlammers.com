@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+import { breakable, splitTitle } from '../lib/essays';
+import { essayMeta, essaysPage, startHere } from '../data/site';
+
+const essays = await getCollection('essays');
+const bySlug = new Map(essays.map((e) => [e.data.slug, e.data]));
+const essay = (slug: string) => {
+  const found = bySlug.get(slug);
+  if (!found) throw new Error(`No essay with slug "${slug}"`);
+  return found;
+};
+const series = essays
+  .filter((e) => e.data.series === 'existence')
+  .sort((a, b) => (a.data.seriesOrder ?? 0) - (b.data.seriesOrder ?? 0))
+  .map((e) => e.data);
+---
+
+<section aria-labelledby="start-here" class="mt-14">
+  <h2 id="start-here" class="text-2xl font-bold">{essaysPage.startHere}</h2>
+  <ol class="mt-6 space-y-5">
+    {
+      startHere.map(({ slug, standfirst }) => {
+        const e = essay(slug);
+        return (
+          <li class="font-reading text-lg leading-relaxed text-muted">
+            <a href={`/essays/${slug}/`} class="font-ui text-xl font-bold text-ink decoration-accent decoration-2 underline-offset-4 hover:underline">
+              {breakable(essayMeta[slug]?.title ?? e.title)}
+            </a>{' '}
+            ({e.firstPublished.slice(0, 4)}). {standfirst}
+          </li>
+        );
+      })
+    }
+  </ol>
+</section>
+
+<section aria-labelledby="existence-series" class="mt-14">
+  <h2 id="existence-series" class="text-2xl font-bold">{essaysPage.seriesHeading}</h2>
+  <p class="mt-3 font-reading text-lg leading-relaxed text-muted">{essaysPage.seriesIntro}</p>
+  <ol class="mt-3 flex flex-wrap gap-x-2 font-semibold">
+    {
+      series.map((e, i) => {
+        const { subtitle } = splitTitle(e.title);
+        return (
+          <li>
+            {i > 0 && <span aria-hidden="true" class="mr-2 text-muted">·</span>}
+            <a href={`/essays/${e.slug}/`} title={e.title} class="text-accent underline decoration-1 underline-offset-4 hover:decoration-2">
+              Part {e.seriesOrder}
+              {subtitle && <span class="sr-only">: {subtitle}</span>}
+            </a>
+          </li>
+        );
+      })
+    }
+  </ol>
+</section>
+
+<p class="mt-14 font-semibold">
+  New essays: <a href="/rss.xml" class="text-accent underline decoration-1 underline-offset-4 hover:decoration-2">RSS</a>
+</p>
+
+<section aria-labelledby="colophon" class="mt-14 border-t border-rule pt-8">
+  <h2 id="colophon" class="text-lg font-bold">{essaysPage.colophonHeading}</h2>
+  <p class="mt-3 font-reading text-lg leading-relaxed text-muted">{essaysPage.colophon}</p>
+</section>

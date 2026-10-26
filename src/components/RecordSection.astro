@@ -1,0 +1,17 @@
+---
+import RecordRow from './RecordRow.astro';
+import type { RecordGroup } from '../lib/record';
+
+interface Props {
+  group: RecordGroup;
+}
+
+const { group } = Astro.props;
+---
+
+<section class="mt-14">
+  <h2 class="text-2xl font-bold">{group.heading}</h2>
+  <ul class="mt-5 space-y-3">
+    {group.items.map((item) => <RecordRow item={item} />)}
+  </ul>
+</section>

@@ -80,7 +80,7 @@ Besides the illusion of these connections there is nothing making one of these s
 
 The image below is a simple representation of this idea: You as a collection of conscious states.
 
-![](./images/the-case-for-karma/figure-1.png)
+![A row of circles: the conscious states of a past "you" in light orange, your current conscious state in dark orange, and the states of a future "you" in green](./images/the-case-for-karma/figure-1.png)
 
 (The above representation is linear to make the argument easier to understand. Note that the concept of time is not actually needed for this abstraction. For the sake of simplicity, I will not go into that in this article.)
 
@@ -92,7 +92,7 @@ With the previous chapters in mind, discussing others is not going to be a very 
 
 Imagine all conscious states that ever existed and will ever exist mapped in a single landscape. A small fraction will be a conscious state you experienced in your past. Another fraction will be the states you will experience as your future. But as even your own conscious states are not actually connected by anything more than memory and imagination, what makes them different from conscious states of other people?
 
-![](./images/the-case-for-karma/Conscious-states.png)
+![The same row of past, current and future states of "you", as one line in a large grid of all conscious states in existence](./images/the-case-for-karma/Conscious-states.png)
 
 While this thought might weaken the sense of “self” it can also be interpreted as a strengthening of the sense of “all”. If the connection you have to your past and future are indeed not as special as we feel they are (and in nature/physics, anything rarely is), you could also argue that the connection we have to everything else might just be as special as that intuitive connection to ourselves we experience. 
 

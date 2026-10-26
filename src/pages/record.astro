@@ -1,0 +1,16 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import RecordSection from '../components/RecordSection.astro';
+import { getRecord } from '../lib/record';
+import { recordPage } from '../data/site';
+
+const groups = await getRecord();
+---
+
+<SiteLayout title={recordPage.title} description={recordPage.description} current="/record/">
+  <div class="mx-auto max-w-3xl px-5 pt-6 md:px-12 md:pt-12">
+    <PageIntro heading={recordPage.heading} intro={recordPage.intro} />
+    {groups.map((group) => <RecordSection group={group} />)}
+  </div>
+</SiteLayout>

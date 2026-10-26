@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import EssayArticle from '../../components/EssayArticle.astro';
+import { getSeries, type Essay } from '../../lib/essays';
+import { essayMeta, siteName } from '../../data/site';
+
+export async function getStaticPaths() {
+  const essays = await getCollection('essays');
+  return essays.map((essay) => ({ params: { slug: essay.data.slug }, props: { essay } }));
+}
+
+interface Props {
+  essay: Essay;
+}
+
+const { essay } = Astro.props;
+const meta = essayMeta[essay.data.slug];
+if (!meta) throw new Error(`No title and description for essay "${essay.data.slug}" in src/data/site.ts`);
+const series = await getSeries(essay);
+const url = new URL(Astro.url.pathname, Astro.site).href;
+
+const article = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: essay.data.title,
+  description: meta.description,
+  url,
+  mainEntityOfPage: url,
+  image: new URL('/og.png', Astro.site).href,
+  datePublished: essay.data.firstPublished,
+  dateModified: essay.data.lastModified ?? essay.data.firstPublished,
+  inLanguage: 'en',
+  author: { '@type': 'Person', name: 'Jasper Lammers', url: Astro.site!.href },
+};
+---
+
+<SiteLayout
+  title={`${meta.title ?? essay.data.title} | ${siteName}`}
+  description={meta.description}
+  type="article"
+  jsonLd={article}
+  current="/essays/"
+>
+  <EssayArticle essay={essay} series={series} />
+</SiteLayout>

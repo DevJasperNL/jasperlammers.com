@@ -1,13 +1,21 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import { getImage } from 'astro:assets';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import HomeIntro from '../components/HomeIntro.astro';
+import jasper from '../assets/jasper.jpg';
+import { footerLinks, home } from '../data/site';
+
+const photo = await getImage({ src: jasper, width: 640, format: 'jpg' });
+const person = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Jasper Lammers',
+  url: Astro.site!.href,
+  image: new URL(photo.src, Astro.site).href,
+  sameAs: [home.hiring.href, ...footerLinks.map((l) => l.href)],
+};
 ---
 
-<BaseLayout title="Jasper Lammers" description="Placeholder test page for the new jasperlammers.com.">
-  <main class="mx-auto max-w-2xl px-5 py-24">
-    <h1 class="text-4xl font-semibold">Jasper Lammers</h1>
-    <p class="mt-4 text-lg">Placeholder tagline.</p>
-    <p class="mt-8">
-      <a class="underline underline-offset-4 hover:no-underline" href="https://devjasper.nl/">devjasper.nl</a>
-    </p>
-  </main>
-</BaseLayout>
+<SiteLayout title={home.title} description={home.description} jsonLd={person}>
+  <HomeIntro />
+</SiteLayout>

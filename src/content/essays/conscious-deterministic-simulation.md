@@ -50,7 +50,7 @@ In computer science, a deterministic algorithm is an algorithm which, given a pa
 
 I think this is a fair prerequisite[^8] to have for our program. Artificial neural network implementations can easily be implemented with a deterministic implementation and for the sake of this article we want to have a purely information based system. We want to prevent “real world magic” to accidentally leak into our system by making use of multiple threads over multiple computer cores for example.
 
-![](./images/conscious-deterministic-simulation/Mr-Smith.png)
+![Agent Smith from The Matrix, in sunglasses and a dark suit](./images/conscious-deterministic-simulation/Mr-Smith.png)
 
 Of course, there is still one place where our "base reality"[^9] can leak into our simulation: through the inputs. Even though our simulation might be deterministic, one might argue that base reality is not (still open for debate ;) [^10]). Whether this matters or not, in order to prevent discussions about this, we should also make sure to get our inputs deterministic. This can easily be done by simulating the world as well. Now our “brain” will not only be simulated, but it will be getting inputs from a simulated world as well. Both of these forming the same deterministic system.
 
@@ -64,7 +64,7 @@ Our simulated brain will receive inputs only from a simulated reality. Both the 
 
 Without further ado, I present to you, our simulation:
 
-![](./images/conscious-deterministic-simulation/Simulation.png)
+![A drawing of a computer whose screen shows a brain plus a "Welcome to reality" sign](./images/conscious-deterministic-simulation/Simulation.png)
 
 So, let's assume that a system like that could really result in consciousness. In us. What would this mean?  
 Of course, it would mean that we could indeed be living in such a simulation right now, just as stated in Nick Bostrom's paper about the simulation argument. It would only be a matter of tweaking the simulated reality (the inputs) in just the right way to give us the experience we are having today.
@@ -79,7 +79,7 @@ Remember, there are no wrong answers. As the cause of consciousness is only a be
 
 ## Free Will
 
-![](./images/conscious-deterministic-simulation/Domino.png)
+![A row of black dominoes toppling over](./images/conscious-deterministic-simulation/Domino.png)
 
 When this article specifically mentioned determinism, a few of you probably already knew where this was going. And yes, the first and most obvious consequence of such a simulation would mean that free will is not real[^12]. Of course, this is subject to your definition of free will[^13]. But no matter how you look at it, in our simulation all thoughts and all decisions could be predicted. We can run the simulation a hundred times over, but if we would start with the same initial state, the simulation would run exactly the same way as it has all the other times[^14].
 
@@ -91,13 +91,13 @@ In any artificial mind that only relies on an abstracted logic layer, time would
 
 If the simulated world is being slowed down/sped up at the same rate as the simulated brain, it should have no effect on the conscious experience whatsoever. We could simulate one second of consciousness in a year’s time. But more interestingly, given a fast enough computer, we could simulate complete lifetimes in what would be only a matter of seconds for us.
 
-![](./images/conscious-deterministic-simulation/Simulation-times.png)
+![A diagram of four simulations against base time: a slow one, a fast one, a purposely delayed one and an irregular one, each passing through numbered states at its own pace](./images/conscious-deterministic-simulation/Simulation-times.png)
 
 The question now is, of course, will all, or any of the simulations as described above, still be conscious? If we no longer accept that they are, our conclusion would be that consciousness is tightly related to the time in base reality, as changing simulation time would cause it to disappear. However, if we still accept that one or more of these simulations are conscious, the relation between base and simulated time becomes a bit more...relative.
 
 ## Spaceless
 
-![](./images/conscious-deterministic-simulation/Distributed-network.png)
+![A drawing of five computers around a brain, connected to it by lines](./images/conscious-deterministic-simulation/Distributed-network.png)
 
 Next, we will explore what effect our spatial dimension has on the consciousness of our simulation. It is easy to imagine running our simulation on a single computer. But as the simulation gets more complicated and more difficult to run on a single computer, it might be desirable to run it on a distributed system. This could be in the form of a supercomputer, which connects the processors of a lot of different machines, or in the form of multiple computers working together over a network, all working together to calculate the next state of our simulation[^16].
 
@@ -127,13 +127,13 @@ Note that concepts like forwards, backwards and reverse are all relative terms. 
 
 The expected result would be that even though the simulation time would run in reverse, the perceived time of the simulation consciousness does not. As the simulated past (future in base time) can be remembered and the future (past in base time) cannot, the resulting consciousness might not be affected, while from the perspective of the ones running the simulation, it is running in reverse direction.
 
-![](./images/conscious-deterministic-simulation/Reverse-simulation-times.png)
+![A diagram of a simulation running from state 7 back to state 1: base time moves forward while simulation time runs backward](./images/conscious-deterministic-simulation/Reverse-simulation-times.png)
 
 Apart from this being an interesting (and logical) next step to take in this thought experiment, this scenario also fits well with the reverse ancestor simulations that Nick Bostrom is referring to in his simulation argument. For what better way to find out what your ancestors were up to, than to start with your current state and simulate time backwards in order to find out. This would also be a good argument for running a lot of simulations, as the butterfly effect[^18] will likely cause even the most precise starting states to show larger and larger deviations[^19] as the simulation progresses further back in time.
 
 Does a simulation like this still have the potential to be conscious? What do you think?
 
-![](./images/conscious-deterministic-simulation/Molten-Clock.png)
+![A melting clock](./images/conscious-deterministic-simulation/Molten-Clock.png)
 
 If you believe there is a chance we are living in a simulation[^20], you should also consider the chance that your conscious time is actually running backwards to the base world's time. If this is the case, let us just hope this simulation started the moment you died of old age[^21].
 

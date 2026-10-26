@@ -2,16 +2,149 @@
 @source not "../../archive";
 @source not "../../docs";
 
-/* Default tokens. The chosen direction (A) overrides them under [data-direction] until the real build moves them here. */
+/* Direction A ("Cousin"), see docs/design.md. Dark values are swapped in below. */
 @theme {
-  --color-paper: #fbfaf7;
-  --color-ink: #1c1b19;
-  --color-muted: #5c5a55;
+  --color-paper: #faf7f2;
+  --color-ink: #22272e;
+  --color-muted: #5a5f66;
   --color-accent: #2c6a63;
-  --color-rule: #e4e0d8;
-  --color-tint: #f0ece4;
+  --color-rule: #e4ded3;
+  --color-tint: #efe9df;
 
-  --font-ui: ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-ui);
-  --font-reading: ui-serif, Georgia, serif;
+  --font-ui: 'Figtree Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Figtree Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-reading: 'Source Serif 4 Variable', Georgia, serif;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #1a1d21;
+    --color-ink: #e8e4dc;
+    --color-muted: #a8a49c;
+    --color-accent: #7fc2b8;
+    --color-rule: #33373d;
+    --color-tint: #23272c;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.prose {
+  font-family: var(--font-reading);
+  font-size: 1.1875rem;
+  line-height: 1.65;
+  font-optical-sizing: auto;
+}
+.prose > * + * {
+  margin-top: 1.25em;
+}
+.prose h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin-top: 2.25em;
+}
+.prose h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 2em;
+}
+.prose a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+.prose a:hover {
+  text-decoration-thickness: 2px;
+}
+.prose blockquote {
+  background: var(--color-tint);
+  border-radius: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.0625rem;
+}
+.prose blockquote > * + * {
+  margin-top: 0.75em;
+}
+/* The essay diagrams are drawn on white, so they keep a white background in dark mode too. */
+.prose img {
+  border-radius: 1rem;
+  margin-inline: auto;
+  height: auto;
+  background: #fff;
+}
+.prose ul,
+.prose ol {
+  padding-left: 1.4em;
+  list-style: revert;
+}
+.prose li + li {
+  margin-top: 0.4em;
+}
+.prose table {
+  width: 100%;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  border-collapse: collapse;
+}
+.prose th,
+.prose td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--color-rule);
+}
+.prose th {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  padding-right: 1.25rem;
+  white-space: nowrap;
+}
+.prose sup a {
+  text-decoration: none;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.75em;
+  padding-inline: 0.1em;
+}
+.prose .footnotes {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-rule);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--color-muted);
+}
+.prose .footnotes h2 {
+  font-size: 1rem;
+  margin-top: 0;
+  color: var(--color-ink);
+}
+.prose .footnotes ol {
+  margin-top: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rise {
+    animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    animation-delay: calc(var(--i, 0) * 90ms);
+  }
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+  }
 }

@@ -1,0 +1,23 @@
+---
+import SiteLayout from './SiteLayout.astro';
+import { siteName } from '../data/site';
+
+interface Props {
+  title: string;
+  standfirst: string;
+  description: string;
+}
+
+const { title, standfirst, description } = Astro.props;
+---
+
+<SiteLayout title={`${title} | ${siteName}`} description={description} current="/projects/">
+  <article class="mx-auto max-w-[36rem] px-5 pt-6 md:pt-12">
+    <a href="/projects/" class="text-sm font-semibold text-muted hover:text-accent">← All projects</a>
+    <h1 class="mt-6 text-[2.25rem] leading-[1.1] font-bold tracking-tight md:text-5xl">{title}</h1>
+    <p class="mt-4 text-[0.95rem] text-muted">{standfirst}</p>
+    <div class="prose mt-10">
+      <slot />
+    </div>
+  </article>
+</SiteLayout>

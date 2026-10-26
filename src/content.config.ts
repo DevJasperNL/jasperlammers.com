@@ -22,6 +22,20 @@ const essays = defineCollection({
   }),
 });
 
+const projects = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/projects' }),
+  schema: z.object({
+    title: z.string(),
+    /** The line under the title on the project page. */
+    standfirst: z.string(),
+    /** The entry on /projects/. */
+    years: z.string(),
+    summary: z.string(),
+    description: z.string(),
+    order: z.number(),
+  }),
+});
+
 // YAML parses full dates as Date, bare years as numbers and year-months as strings.
 const recordDate = z.union([z.date(), z.number(), z.string()]);
 
@@ -44,4 +58,4 @@ const record = defineCollection({
   ),
 });
 
-export const collections = { essays, record };
+export const collections = { essays, projects, record };

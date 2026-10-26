@@ -1,0 +1,33 @@
+---
+import { render } from 'astro:content';
+import SeriesCard from './SeriesCard.astro';
+import { breakable, formatDate, type Essay, type Series } from '../lib/essays';
+import { essayIntros } from '../data/site';
+
+interface Props {
+  essay: Essay;
+  series?: Series;
+}
+
+const { essay, series } = Astro.props;
+const { Content } = await render(essay);
+const intro = essayIntros[essay.data.slug];
+---
+
+<article class="mx-auto max-w-[36rem] px-5 pt-6 md:pt-12">
+  <a href="/essays/" class="text-sm font-semibold text-muted hover:text-accent">← All essays</a>
+  <h1 class="mt-6 text-[2.25rem] leading-[1.1] font-bold tracking-tight break-words md:text-5xl">
+    {breakable(essay.data.title)}
+  </h1>
+  <p class="mt-4 text-[0.95rem] text-muted">
+    First published <time datetime={essay.data.firstPublished}>{formatDate(essay.data.firstPublished)}</time> on{' '}
+    <a href={essay.data.waybackUrl} class="font-semibold text-accent underline decoration-1 underline-offset-4 hover:decoration-2">
+      openminddough.com
+    </a>
+  </p>
+  {intro && <p class="mt-8 rounded-[1.25rem] bg-tint px-6 py-5 font-reading text-lg leading-relaxed">{intro}</p>}
+  <div class="prose mt-10">
+    <Content />
+  </div>
+  {series && <SeriesCard series={series} />}
+</article>
