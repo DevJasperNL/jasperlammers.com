@@ -1,6 +1,6 @@
 # jasperlammers.com design
 
-Status: final. Date: 2026-10-26. Chosen design: direction A ("Cousin"), as built on `/directions/a/`. Exploration history: `archive/README.md`, tag `design-directions-v1`.
+Status: final. Date: 2026-10-26. Chosen design: direction A ("Cousin"), as built on `/directions/a/` (route removed in the build phase). Exploration history: `archive/README.md`, tag `design-directions-v1`.
 
 In one line: warm paper and a teal accent, Figtree for headings and interface, Source Serif 4 for reading; a cousin of devjasper.nl that shares its heading font and photo arch but not its blue or its heavy headings over long text.
 

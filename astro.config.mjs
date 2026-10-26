@@ -14,6 +14,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
-  // /directions/ is a temporary design comparison and stays out of the sitemap.
-  integrations: [sitemap({ filter: (page) => !page.includes('/404') && !page.includes('/directions/') })]
+  integrations: [sitemap({ filter: (page) => !page.includes('/404') })]
 });
