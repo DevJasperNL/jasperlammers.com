@@ -35,7 +35,7 @@ The URL set is fixed (see `CLAUDE.md`). Nothing is added.
 - **The Fate of our Children** opens with a framing intro of one or two sentences (the essay itself is 287 words), for readers who land on it from search.
 - **Series navigation** (prev/next) for both series: Existence 1 to 5, and Familiar Existence → Matter over Mind.
 - **Provenance line** per essay: "first published <date> on openminddough.com", linking the earliest Wayback capture. The 2018 YouTube and Podbean versions are not shown.
-- **Colophon** on `/essays/`: the ideas and arguments are Jasper's, the prose is AI-assisted (structure.md §4).
+- **Colophon** on `/essays/`: where the essays were first published and what was changed (typos, one quote attribution). No AI disclosure: all 13 essays are Jasper's own prose, the 2025 one with spell-check help only (decided 2026-10-26; structure.md §4 assumed AI-assisted prose). Future essays: decided per essay.
 - **Essay text is not rewritten.** Exceptions: the title "Why the origin of consciousness is will always be a belief" becomes "Why the origin of consciousness will always be a belief" (the slug stays `origin-of-consciousness`), and two factual slips are fixed (see "Decided after review").
 
 ### Record
@@ -44,7 +44,7 @@ The URL set is fixed (see `CLAUDE.md`). Nothing is added.
 - Career entries are dated and match LinkedIn.
 
 ### Projects
-Highlight pages written from the source dossiers. Stalled work is described matter-of-factly: what it was, what it achieved, when it stopped. No apology, no release promise. Strategic RPS is a dormant 2016–2019 prototype; the game pack is labelled no longer available.
+Highlight pages written from the source dossiers. Stalled work is described matter-of-factly: what it was, what it achieved, when it stopped. No apology, no release promise. Strategic RPS is a dormant 2014–2019 prototype (started 2014, picked up again in 2018); the game pack is labelled no longer available.
 
 ## Content sources
 

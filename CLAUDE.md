@@ -87,6 +87,7 @@ Do not add, rename or remove pages, change essay slugs, move the feed or change 
 - Never invent facts, dates, roles or results. If something is missing, mark it `[TODO: ...]` and ask.
 - No AI or marketing phrases ("passionate", "leverage", "seamless", "cutting-edge", "unlock", "elevate").
 - The essays are existing text and are not rewritten.
+- The 13 existing essays are Jasper's own prose and carry no AI disclosure. When adding a new essay, ask whether AI helped write the prose; if so, disclose it on `/essays` and in its Zenodo metadata (structure.md §4).
 
 ## Design system
 
