@@ -1,0 +1,17 @@
+---
+import { COMPONENTS, directionPaths } from '../../../components/directions/registry';
+import type { DIRECTIONS } from '../../../components/directions/directions';
+
+export const getStaticPaths = directionPaths;
+
+interface Props {
+  direction: (typeof DIRECTIONS)[number];
+}
+
+const { direction } = Astro.props;
+const { Layout, Home } = COMPONENTS[direction.id];
+---
+
+<Layout title={`Home, direction ${direction.id.toUpperCase()} | Jasper Lammers`} description={`Design direction ${direction.name}: home page sample.`}>
+  <Home />
+</Layout>

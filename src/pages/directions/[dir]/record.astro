@@ -1,0 +1,19 @@
+---
+import { COMPONENTS, directionPaths } from '../../../components/directions/registry';
+import type { DIRECTIONS } from '../../../components/directions/directions';
+import { getRecordSample } from '../../../lib/record';
+
+export const getStaticPaths = directionPaths;
+
+interface Props {
+  direction: (typeof DIRECTIONS)[number];
+}
+
+const { direction } = Astro.props;
+const { Layout, Record } = COMPONENTS[direction.id];
+const groups = await getRecordSample();
+---
+
+<Layout title={`Record, direction ${direction.id.toUpperCase()} | Jasper Lammers`} description={`Design direction ${direction.name}: record sample.`} current="/record/">
+  <Record groups={groups} />
+</Layout>

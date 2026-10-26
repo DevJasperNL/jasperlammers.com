@@ -1,0 +1,41 @@
+---
+import { Picture } from 'astro:assets';
+import jasper from '../../../assets/jasper.png';
+import { sampleHref } from '../directions';
+import { home, nav } from '../../../data/site';
+---
+
+<section class="mx-auto max-w-[34rem] px-5 pt-10 text-center md:pt-16">
+  <Picture
+    src={jasper}
+    alt="Jasper Lammers, smiling, in front of green leaves"
+    width={256}
+    widths={[128, 256]}
+    sizes="8rem"
+    formats={['avif', 'webp']}
+    loading="eager"
+    fetchpriority="high"
+    class="mx-auto size-32 rounded-full object-cover object-[50%_20%]"
+  />
+  <h1 class="mt-8 font-display text-5xl leading-tight md:text-6xl">{home.greeting}</h1>
+  <p class="mt-6 font-reading text-[1.3rem] leading-relaxed">{home.intro}</p>
+  <p class="mx-auto mt-8 max-w-max border-y border-rule px-2 py-3 font-reading text-lg italic">
+    {home.hiring.text}
+    <a href={home.hiring.href} class="not-italic text-accent underline decoration-1 underline-offset-4 hover:decoration-2">
+      → {home.hiring.linkText}
+    </a>
+  </p>
+  <p class="mt-8 font-reading text-[1.15rem] leading-relaxed text-muted">{home.offClock}</p>
+  <ul class="mt-10 flex justify-center gap-2 font-ui text-sm font-medium tracking-[0.14em] uppercase">
+    {
+      nav.map((item, i) => (
+        <li>
+          {i > 0 && <span aria-hidden="true" class="mr-2 text-muted">·</span>}
+          <a href={sampleHref('b', item.href)} class="text-accent underline-offset-[5px] hover:underline">
+            {item.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>

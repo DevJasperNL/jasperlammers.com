@@ -1,0 +1,56 @@
+---
+import { render } from 'astro:content';
+import { breakable, formatDate, type Essay, type Series } from '../../../lib/essays';
+import { sampleHref } from '../directions';
+
+interface Props {
+  essay: Essay;
+  series?: Series;
+}
+
+const { essay, series } = Astro.props;
+const { Content } = await render(essay);
+---
+
+<article class="mx-auto max-w-[36rem] px-5 pt-6 md:pt-12">
+  <a href={sampleHref('a', '/essays/')} class="text-sm font-semibold text-muted hover:text-accent">← All essays</a>
+  <h1 class="break-words mt-6 text-[2.25rem] leading-[1.1] font-bold tracking-tight md:text-5xl">{breakable(essay.data.title)}</h1>
+  <p class="mt-4 text-[0.95rem] text-muted">
+    First published {formatDate(essay.data.firstPublished)} on{' '}
+    <a href={essay.data.waybackUrl} class="font-semibold text-accent underline decoration-1 underline-offset-4 hover:decoration-2">openminddough.com</a>
+  </p>
+  <div class="prose-a mt-10">
+    <Content />
+  </div>
+  {
+    series && (
+      <nav aria-labelledby="series-a" class="mt-16 rounded-[1.75rem] bg-tint px-6 py-6 md:px-8">
+        <h2 id="series-a" class="font-bold">{series.name}</h2>
+        <ol class="mt-3 list-decimal space-y-1.5 pl-5 marker:text-muted">
+          {series.parts.map((p) => (
+            <li>
+              {p.current ? (
+                <span aria-current="page" class="font-semibold">
+                  {p.label} <span class="font-normal text-muted">← you are here</span>
+                </span>
+              ) : (
+                <a href={sampleHref('a', `/essays/${p.slug}/`)} class="text-accent underline-offset-4 hover:underline">
+                  {p.label}
+                </a>
+              )}
+            </li>
+          ))}
+        </ol>
+        {series.oneEssay && (
+          <p class="mt-4 text-[0.95rem] text-muted">
+            Also available as one essay:{' '}
+            <a href={sampleHref('a', `/essays/${series.oneEssay.slug}/`)} class="font-semibold text-accent underline underline-offset-4">
+              {series.oneEssay.title}
+            </a>
+            .
+          </p>
+        )}
+      </nav>
+    )
+  }
+</article>

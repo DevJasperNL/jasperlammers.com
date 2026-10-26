@@ -1,0 +1,119 @@
+/* Direction A, "Cousin": Figtree and Source Serif 4, teal accent. Shares devjasper.nl's heading font and arch. */
+[data-direction='a'] {
+  color-scheme: light dark;
+  --color-paper: #faf7f2;
+  --color-ink: #22272e;
+  --color-muted: #5a5f66;
+  --color-accent: #2c6a63;
+  --color-rule: #e4ded3;
+  --color-tint: #efe9df;
+  --font-ui: 'Figtree Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Figtree Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-reading: 'Source Serif 4 Variable', Georgia, serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-direction='a'] {
+    --color-paper: #1a1d21;
+    --color-ink: #e8e4dc;
+    --color-muted: #a8a49c;
+    --color-accent: #7fc2b8;
+    --color-rule: #33373d;
+    --color-tint: #23272c;
+  }
+}
+
+[data-direction='a'] :focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.prose-a {
+  font-family: var(--font-reading);
+  font-size: 1.1875rem;
+  line-height: 1.65;
+  font-optical-sizing: auto;
+}
+.prose-a > * + * {
+  margin-top: 1.25em;
+}
+.prose-a h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin-top: 2.25em;
+}
+.prose-a h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 2em;
+}
+.prose-a a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+.prose-a blockquote {
+  background: var(--color-tint);
+  border-radius: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.0625rem;
+}
+.prose-a blockquote > * + * {
+  margin-top: 0.75em;
+}
+.prose-a img {
+  border-radius: 1rem;
+  margin-inline: auto;
+  height: auto;
+  background: #fff;
+}
+.prose-a ul,
+.prose-a ol {
+  padding-left: 1.4em;
+  list-style: revert;
+}
+.prose-a li + li {
+  margin-top: 0.4em;
+}
+.prose-a sup a {
+  text-decoration: none;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.75em;
+  padding-inline: 0.1em;
+}
+.prose-a .footnotes {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-rule);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--color-muted);
+}
+.prose-a .footnotes h2 {
+  font-size: 1rem;
+  margin-top: 0;
+  color: var(--color-ink);
+}
+.prose-a .footnotes ol {
+  margin-top: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rise-a {
+    animation: rise-a 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    animation-delay: calc(var(--i, 0) * 90ms);
+  }
+  @keyframes rise-a {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+  }
+}

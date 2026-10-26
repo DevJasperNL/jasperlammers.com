@@ -1,0 +1,135 @@
+/* Direction B, "Book page": Newsreader throughout, Instrument Sans for small labels, rust accent. */
+[data-direction='b'] {
+  color-scheme: light dark;
+  --color-paper: #f5efe3;
+  --color-ink: #2a2420;
+  --color-muted: #6b6158;
+  --color-accent: #9a4528;
+  --color-rule: #ddd3c2;
+  --color-tint: #eee6d6;
+  --font-ui: 'Instrument Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Newsreader Variable', Georgia, serif;
+  --font-reading: 'Newsreader Variable', Georgia, serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-direction='b'] {
+    --color-paper: #1e1a17;
+    --color-ink: #e9e1d3;
+    --color-muted: #aba190;
+    --color-accent: #e39a78;
+    --color-rule: #3a332d;
+    --color-tint: #27221e;
+  }
+}
+
+[data-direction='b'] :focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.prose-b {
+  font-family: var(--font-reading);
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-optical-sizing: auto;
+  hanging-punctuation: first;
+}
+/* Book-style paragraphs: indented, no gap, except after a heading, quote or image. */
+.prose-b p + p {
+  text-indent: 1.5em;
+}
+.prose-b > h2,
+.prose-b > h3,
+.prose-b > blockquote,
+.prose-b > figure,
+.prose-b > p:has(> img),
+.prose-b > ul,
+.prose-b > ol {
+  margin-block: 1.6em;
+}
+.prose-b > :first-child::first-letter {
+  float: left;
+  font-size: 4.15em;
+  line-height: 0.78;
+  padding: 0.06em 0.08em 0 0;
+  color: var(--color-accent);
+}
+.prose-b h2 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  text-align: center;
+  margin-top: 2.2em;
+}
+.prose-b h3 {
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.prose-b a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+.prose-b blockquote {
+  font-style: italic;
+  padding-inline: 1.5em;
+  color: var(--color-ink);
+}
+.prose-b blockquote p + p {
+  text-indent: 0;
+  margin-top: 0.5em;
+  text-align: right;
+  font-size: 0.9em;
+  color: var(--color-muted);
+}
+.prose-b img {
+  margin-inline: auto;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+@media (prefers-color-scheme: dark) {
+  .prose-b img {
+    mix-blend-mode: normal;
+    background: #f5efe3;
+    border-radius: 2px;
+  }
+}
+.prose-b ul,
+.prose-b ol {
+  padding-left: 1.4em;
+  list-style: revert;
+}
+.prose-b sup a {
+  text-decoration: none;
+  font-family: var(--font-ui);
+  font-size: 0.7em;
+  font-weight: 600;
+  padding-inline: 0.1em;
+}
+.prose-b .footnotes {
+  margin-top: 3rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--color-muted);
+}
+.prose-b .footnotes h2 {
+  font-family: var(--font-ui);
+  font-style: normal;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.prose-b .footnotes li + li {
+  margin-top: 0.4em;
+}
+.prose-b .footnotes p + p {
+  text-indent: 0;
+}

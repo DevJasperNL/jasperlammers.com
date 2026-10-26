@@ -1,0 +1,60 @@
+---
+import '@fontsource-variable/newsreader/opsz.css';
+import '@fontsource-variable/newsreader/opsz-italic.css';
+import '@fontsource-variable/instrument-sans';
+import '../../../styles/directions/b.css';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import DirectionsBar from '../DirectionsBar.astro';
+import { sampleHref } from '../directions';
+import { footerLinks, nav } from '../../../data/site';
+
+interface Props {
+  title: string;
+  description: string;
+  current?: string;
+}
+
+const { title, description, current } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} direction="b">
+  <DirectionsBar dir="b" />
+  <a href="#content" class="sr-only font-ui text-sm focus:not-sr-only focus:absolute focus:left-4 focus:top-12 focus:bg-ink focus:px-3 focus:py-2 focus:text-paper">
+    Skip to content
+  </a>
+  <header class="mx-auto max-w-[34rem] px-5 pt-10 pb-4 text-center md:pt-14">
+    <a href={sampleHref('b', '/')} class="font-display text-2xl italic">Jasper Lammers</a>
+    <nav aria-label="Main" class="mt-3">
+      <ul class="flex justify-center gap-6 font-ui text-xs font-medium tracking-[0.14em] uppercase">
+        {
+          nav.map((item) => (
+            <li>
+              <a
+                href={sampleHref('b', item.href)}
+                aria-current={item.href === current ? 'page' : undefined}
+                class="text-muted underline-offset-[5px] hover:text-accent aria-[current=page]:text-ink aria-[current=page]:underline"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </header>
+  <main id="content">
+    <slot />
+  </main>
+  <footer class="mx-auto mt-24 max-w-[34rem] px-5 pb-12 text-center font-ui text-xs tracking-wide text-muted">
+    <div aria-hidden="true" class="mx-auto mb-6 h-px w-10 bg-rule"></div>
+    <span>© Jasper Lammers</span>
+    {
+      footerLinks.map((l) => (
+        <>
+          <span aria-hidden="true" class="mx-2">·</span>
+          <a href={l.href} class="hover:text-accent">{l.label}</a>
+        </>
+      ))
+    }
+  </footer>
+</BaseLayout>

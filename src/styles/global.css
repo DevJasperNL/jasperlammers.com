@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
+/* Default tokens. During the design directions phase each direction overrides them under [data-direction]. */
 @theme {
-  --color-bg: #fbfaf7;
+  --color-paper: #fbfaf7;
   --color-ink: #1c1b19;
+  --color-muted: #5c5a55;
+  --color-accent: #2c6a63;
+  --color-rule: #e4e0d8;
+  --color-tint: #f0ece4;
+
+  --font-ui: ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-ui);
+  --font-reading: ui-serif, Georgia, serif;
 }

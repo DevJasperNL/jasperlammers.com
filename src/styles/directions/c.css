@@ -1,0 +1,124 @@
+/* Direction C, "Margin": Public Sans and Literata, moss accent, a left margin column for labels and dates. */
+[data-direction='c'] {
+  color-scheme: light dark;
+  --color-paper: #f7f5ee;
+  --color-ink: #1f2320;
+  --color-muted: #5e625a;
+  --color-accent: #4c6130;
+  --color-rule: #dcdace;
+  --color-tint: #eeebe0;
+  --font-ui: 'Public Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Public Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-reading: 'Literata Variable', Georgia, serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-direction='c'] {
+    --color-paper: #191b18;
+    --color-ink: #e4e4da;
+    --color-muted: #a3a699;
+    --color-accent: #a9c27e;
+    --color-rule: #34372f;
+    --color-tint: #22251f;
+  }
+}
+
+[data-direction='c'] :focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.prose-c {
+  position: relative;
+  font-family: var(--font-reading);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  font-optical-sizing: auto;
+}
+.prose-c > * + * {
+  margin-top: 1.2em;
+}
+.prose-c h2 {
+  font-family: var(--font-display);
+  font-weight: 650;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin-top: 2.4em;
+}
+.prose-c h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.0625rem;
+  margin-top: 2em;
+}
+/* From lg up, headings hang in the margin column, level with the text that follows. */
+@media (min-width: 64rem) {
+  .prose-c > h2 {
+    position: absolute;
+    left: -15rem;
+    width: 12.5rem;
+    /* The gap below plus half the line-height difference, so the heading lines up with the first line of text. */
+    margin-top: 2.85rem;
+    font-size: 0.9375rem;
+    text-align: right;
+    color: var(--color-muted);
+  }
+  .prose-c > h2 + * {
+    margin-top: 2.5rem;
+  }
+}
+.prose-c a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+.prose-c blockquote {
+  border-left: 2px solid var(--color-accent);
+  padding-left: 1.25rem;
+  font-style: italic;
+}
+.prose-c blockquote > * + * {
+  margin-top: 0.6em;
+}
+.prose-c img {
+  height: auto;
+  border: 1px solid var(--color-rule);
+  background: #fff;
+}
+.prose-c ul,
+.prose-c ol {
+  padding-left: 1.4em;
+  list-style: revert;
+}
+.prose-c sup a {
+  text-decoration: none;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.72em;
+  padding-inline: 0.1em;
+}
+.prose-c .footnotes {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-rule);
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--color-muted);
+}
+.prose-c .footnotes h2 {
+  position: static;
+  width: auto;
+  text-align: left;
+  margin-top: 0;
+  font-size: 0.875rem;
+  color: var(--color-ink);
+}
+.prose-c .footnotes ol {
+  margin-top: 0.75rem;
+}
+.prose-c .footnotes li + li {
+  margin-top: 0.35em;
+}

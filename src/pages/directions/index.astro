@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { DIRECTIONS } from '../../components/directions/directions';
+
+const samples = [
+  { label: 'Home', path: '' },
+  { label: 'Essay: Existence (Part 3)', path: 'essays/existence-part-3/' },
+  { label: 'Long essay: headings, images, footnotes', path: 'essays/conscious-deterministic-simulation/' },
+  { label: 'Record', path: 'record/' },
+];
+---
+
+<BaseLayout title="Design directions | Jasper Lammers" description="Temporary comparison of three design directions for jasperlammers.com.">
+  <main class="mx-auto max-w-3xl px-5 py-16 font-[system-ui]">
+    <h1 class="text-3xl font-semibold">Design directions</h1>
+    <p class="mt-3 text-neutral-600">
+      Temporary routes for comparing three directions. Every essay is built in every direction, so series links work. Dark mode follows the system setting.
+    </p>
+    <ul class="mt-10 grid gap-6 md:grid-cols-3">
+      {
+        DIRECTIONS.map((d) => (
+          <li class="rounded-lg border border-neutral-300 p-5">
+            <h2 class="text-lg font-semibold">
+              {d.id.toUpperCase()}. {d.name}
+            </h2>
+            <p class="mt-2 text-sm text-neutral-600">{d.summary}</p>
+            <ul class="mt-4 space-y-1 text-sm">
+              {samples.map((s) => (
+                <li>
+                  <a href={`/directions/${d.id}/${s.path}`} class="text-blue-700 underline underline-offset-2">
+                    {s.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</BaseLayout>
