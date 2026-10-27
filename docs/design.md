@@ -84,7 +84,7 @@ Mobile / from `md` (768px) up.
 ## Imagery
 - The photo sits in an arch (`rounded-t-full`, 4:5 crop) with a tint arch offset behind it (1rem, 1.25rem from `md`), as on devjasper.nl. Optimised through `<Picture>` (avif, webp), loaded eagerly.
 - The photo is a casual one (garden, blue shirt), cropped to the upper body (crop B, chosen 2026-10-26). `src/assets/jasper.jpg` is stored pre-cropped at 4:5, 1400 × 1750.
-- Essay images: centred, `rounded` 1rem, on a white background in both modes, because the diagrams are drawn on white. Alt texts were added in the build phase.
+- Essay images: centred, `rounded` 1rem, on a white background in both modes, because the diagrams are drawn on white. Alt texts were added in the build phase. The film still in Conscious Deterministic Simulation carries a source credit below it (`.credit`).
 - OG image (`public/og.png`, 1200 × 630): the name in Figtree 800, "jasperlammers.com" in accent, and the photo arch, on paper. Favicon: a "J" stroke in paper on an accent rounded square (SVG, ICO, apple-touch icon).
 - No stock photos, no icons, no cosmic or "deep thoughts" imagery.
 

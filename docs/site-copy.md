@@ -257,7 +257,6 @@ No download link and no plans: the brief rules out a release promise.
 
 - Thesis (PDF)
 - Thesis with appendices (ZIP; the appendices are in Dutch)
-- The record in the HBO Kennisbank
 
 **Videos**
 

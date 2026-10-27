@@ -21,7 +21,6 @@ I graduated in June 2011, cum laude.
 
 - [Thesis (PDF)](/files/V.I.P.-Thesis-Jasper-Lammers.pdf)
 - [Thesis with appendices (ZIP; the appendices are in Dutch)](/files/V.I.P.-Thesis-Jasper-Lammers.zip)
-- [The record in the HBO Kennisbank](https://hbo-kennisbank.nl/details/sharekit_fontys:oai:surfsharekit.nl:c8f3e1d9-8d57-40c9-a253-237129040e5d)
 
 ## Videos
 

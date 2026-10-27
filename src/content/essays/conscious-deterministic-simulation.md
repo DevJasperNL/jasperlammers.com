@@ -52,6 +52,8 @@ I think this is a fair prerequisite[^8] to have for our program. Artificial neur
 
 ![Agent Smith from The Matrix, in sunglasses and a dark suit](./images/conscious-deterministic-simulation/Mr-Smith.png)
 
+<p class="credit">Still from The Matrix (1999), Warner Bros.</p>
+
 Of course, there is still one place where our "base reality"[^9] can leak into our simulation: through the inputs. Even though our simulation might be deterministic, one might argue that base reality is not (still open for debate ;) [^10]). Whether this matters or not, in order to prevent discussions about this, we should also make sure to get our inputs deterministic. This can easily be done by simulating the world as well. Now our “brain” will not only be simulated, but it will be getting inputs from a simulated world as well. Both of these forming the same deterministic system.
 
 A good analogy would be to say that we created a (hopefully kinder) version of mister Smith from the movie "The Matrix": a digital mind, living inside a digital world.
