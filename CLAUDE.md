@@ -39,6 +39,7 @@ Ship zero client-side JavaScript by default. Only add interactivity with a `<scr
 | `npm run build`   | Production build into `dist/`                   |
 | `npm run preview` | Serve the built `dist/` locally to verify       |
 | `npm run check`   | Type-check `.astro` and `.ts` files             |
+| `npm run update-github-numbers` | Refresh the GitHub numbers on `/record` |
 
 Always run `npm run build` and `npm run check` before considering a change done. A failing build means a failing deploy.
 
@@ -103,6 +104,7 @@ Direction A ("Cousin"), chosen 2026-10-26. Full decisions in `docs/design.md`; r
 
 - **Host:** Cloudflare Workers with static assets, built by Workers Builds from this GitHub repo. Not Cloudflare Pages. Build settings live in the Cloudflare dashboard; check there before assuming build or deploy commands.
 - **Trigger:** every push to `main` builds and deploys.
+- **GitHub numbers:** `/record` reads `src/data/github-numbers.json`; the build makes no API calls. `.github/workflows/update-github-numbers.yml` refreshes it on the 1st of every month and commits it to `main`, which deploys. A new `repo:` in `record.yaml` fails the build until `npm run update-github-numbers` has run.
 - **Worker:** `jasperlammers-com`, production branch `main`.
 - **Preview:** until cutover the site is only on https://jasperlammers-com.jasper-lammers.workers.dev/. `public/_headers` sends `X-Robots-Tag: noindex` on every path so the preview is not indexed. Remove it only at cutover (migration Phase 7).
 - **Domain:** the custom domain `jasperlammers.com` is not attached yet; that is Phase 7. The old WordPress site keeps serving the domain until then.
@@ -112,7 +114,7 @@ Direction A ("Cousin"), chosen 2026-10-26. Full decisions in `docs/design.md`; r
 ## Git workflow
 
 - Commit directly on `main`; no branches or pull requests. Archived states are kept with git tags.
-- **Ask before every push.** Every push to `main` deploys.
+- **Ask before every push.** Every push to `main` deploys. The one exception is the monthly GitHub numbers commit by the workflow.
 - Commit only when `npm run build` and `npm run check` pass locally.
 - Never commit `dist/`, `.astro/`, `node_modules/`, `_input/` or `.env*` files.
 - Small, descriptive commits.
