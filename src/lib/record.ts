@@ -64,7 +64,7 @@ export async function getRecord(): Promise<RecordGroup[]> {
   const [essays, articles, openSource, projects, career, education] = await Promise.all(
     ['essays', 'articles', 'openSource', 'projects', 'career', 'education'].map(group),
   );
-  const github = await getGitHubNumbers(openSource.flatMap((o) => (o.repo ? [o.repo] : [])));
+  const github = getGitHubNumbers(openSource.flatMap((o) => (o.repo ? [o.repo] : [])));
 
   const writing: RecordItem[] = [
     ...essays.map((e) => ({ ...copyFor(e.title!), href: link(e.href), date: range(e.start!, e.end) })),
