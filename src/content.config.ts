@@ -28,11 +28,7 @@ const projects = defineCollection({
     title: z.string(),
     /** The line under the title on the project page. */
     standfirst: z.string(),
-    /** The entry on /projects/. */
-    years: z.string(),
-    summary: z.string(),
     description: z.string(),
-    order: z.number(),
   }),
 });
 

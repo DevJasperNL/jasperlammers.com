@@ -24,11 +24,11 @@ The URL set is fixed (see `CLAUDE.md`). Nothing is added.
 
 | Page | Purpose | Content |
 |---|---|---|
-| `/` | Who Jasper is, in a few lines, and the way into the rest | Short who-I-am covering software, philosophy and the off-the-clock side (games, bouldering, board games); the "Hiring?" line near the top; links to essays, record and projects |
+| `/` | Who Jasper is, in a few lines, and the way into the rest | Short who-I-am covering software, philosophy and the off-the-clock side (games, bouldering, board games); the "Hiring?" line near the top; links to essays and record |
 | `/essays/` | A curated collection, not a feed | Intro, "Start here" order, colophon, RSS link |
 | `/essays/<slug>/` (13) | Long-form reading | Original text, original publication date, provenance line, series prev/next |
 | `/record/` | A dated record of things built and written | Generated from `record.yaml` plus the GitHub API (stars, releases); essays as one collection entry |
-| `/projects/` | Three highlights | Strategic RPS, V.I.P. graduation project, Retro Black & White Game Pack |
+| `/projects/<slug>/` | Three highlight pages, linked from `/record/` (no index page since 2026-10-28) | Strategic RPS, V.I.P. graduation project, Retro Black & White Game Pack |
 
 ### Essays
 - **"Start here" order:** A Map of Existence first. It is the one-piece version of the Existence series and already contains parts 1 to 5, so the series is listed apart, lower down, as the original five-part version (2018), not as the next reading step. Then the other essays in their `order`. The Fate of our Children comes last.

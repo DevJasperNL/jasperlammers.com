@@ -47,7 +47,9 @@ Always run `npm run build` and `npm run check` before considering a change done.
 
 The old WordPress URLs redirect to this site through a map built in `C:\git\site analysis\scripts\redirects.mjs`. That map assumes the site serves exactly its `NEW_PAGES` list, with trailing slashes:
 
-`/`, `/essays/`, `/essays/<slug>/` (13 essays), `/record/`, `/projects/`, `/projects/strategic-rps/`, `/projects/vip-graduation/`, `/projects/retro-bw-game-pack/`, `/rss.xml`, `/sitemap-index.xml`, `/robots.txt`.
+`/`, `/essays/`, `/essays/<slug>/` (13 essays), `/record/`, `/projects/strategic-rps/`, `/projects/vip-graduation/`, `/projects/retro-bw-game-pack/`, `/rss.xml`, `/sitemap-index.xml`, `/robots.txt`.
+
+`/projects/` has no index page (dropped 2026-10-28): it redirects to `/record/` through the `RETIRED` map in `redirects.mjs`, and `/record/` links the three project pages.
 
 Do not add, rename or remove pages, change essay slugs, move the feed or change the slash style without asking: it means updating `NEW_PAGES` and regenerating the map, or every redirect becomes two hops. `public/_redirects` is generated from `C:\git\site analysis\redirects\`; never edit it by hand.
 

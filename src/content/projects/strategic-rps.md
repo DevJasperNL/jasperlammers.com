@@ -1,10 +1,7 @@
 ---
 title: Strategic RPS
 standfirst: A dormant prototype, 2014 to 2019.
-years: 2014–2019
-summary: A multiplayer space strategy game in Java, built from scratch. A dormant prototype.
 description: Strategic RPS, a multiplayer space strategy game built from scratch in Java by Jasper Lammers. A dormant prototype, 2014 to 2019.
-order: 1
 ---
 
 In 2014 I started a space strategy game based on rock paper scissors. I wanted to build it from almost nothing: Java, which I didn't use at work, and my own networking, physics and collision detection.

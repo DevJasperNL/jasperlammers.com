@@ -5,7 +5,7 @@ export const siteName = 'Jasper Lammers';
 export const home = {
   title: 'Jasper Lammers',
   description:
-    'Jasper Lammers builds software for a living and writes essays about existence and consciousness. Essays, projects and a dated record of work.',
+    'Jasper Lammers builds software for a living and writes essays about existence and consciousness. Essays and a dated record of work.',
   greeting: "Hi, I'm Jasper.",
   intro:
     "I build software for a living, freelance since 2022. I've been making games since primary school. At some point I started wondering why anything exists at all, and I wrote it down.",
@@ -17,7 +17,6 @@ export const home = {
 export const nav = [
   { label: 'Essays', href: '/essays/' },
   { label: 'Record', href: '/record/' },
-  { label: 'Projects', href: '/projects/' },
 ];
 
 export const footerLinks = [
@@ -180,14 +179,6 @@ export const recordCopy: Record<string, { title?: string; sentence: string }> = 
 export const articleSentences: Record<string, string> = {
   "How .NET's Math.Round has Nothing to do with Maths. And That's OK!":
     'On CodeProject, where it reached number 2 in the top articles.',
-};
-
-export const projectsPage = {
-  title: 'Projects | Jasper Lammers',
-  description:
-    'Three projects by Jasper Lammers: Strategic RPS, the V.I.P. graduation project and the Retro Black & White Game Pack.',
-  heading: 'Projects',
-  intro: 'Three things I built, and what became of them.',
 };
 
 export const notFound = {

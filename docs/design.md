@@ -37,7 +37,7 @@ Mobile / from `md` (768px) up.
 | Element | Size | Weight | Style |
 | --- | --- | --- | --- |
 | Home greeting (h1) | 3rem / 3.75rem (`text-5xl` / `md:text-6xl`) | 800 | ink, tight tracking |
-| Page title (Record, Essays, Projects) | 3rem | 800 | ink, tight tracking |
+| Page title (Record, Essays) | 3rem | 800 | ink, tight tracking |
 | Section heading (h2) | 1.5rem | 700 | ink |
 | Intro text | 1.25rem / 1.375rem | 400, Source Serif 4 | ink, `leading-relaxed` |
 | Secondary text | 1.125rem | 400, Source Serif 4 | muted, `leading-relaxed` |
@@ -66,14 +66,14 @@ Mobile / from `md` (768px) up.
 - Footer: `mt-24`, then a hairline. No full-width bands, no alternating section backgrounds, no one-screen sections.
 
 ## Layout principles
-- One quiet header on every page: name on the left, Essays · Record · Projects on the right. Not sticky.
+- One quiet header on every page: name on the left, Essays · Record on the right. Not sticky.
 - Pages are plain columns, not sections with calls to action. The only selling line is the hiring line on the home page.
 - Essay page order: "← All essays", title, provenance line, framing intro where there is one (The Fate of our Children), text, footnotes, series card.
 - Series navigation is a card below the essay that lists the whole series and marks the current part ("← you are here"). Nothing at the top of the page.
 
 ## Components
 - **Links in text:** accent, 1px underline with a 3px offset; long URLs may break (`overflow-wrap: anywhere`).
-- **Pill links** (home: Essays, Record, Projects): `rounded-full`, 2px accent border, accent text, Figtree 700; filled with accent and paper text on hover.
+- **Pill links** (home: Essays, Record): `rounded-full`, 2px accent border, accent text, Figtree 700; filled with accent and paper text on hover.
 - **Hiring line:** a tint pill (`rounded-full`, or `rounded-2xl` on phones where it wraps) with "Hiring a .NET freelancer?" and an accent "→ devjasper.nl" link.
 - **Quote card:** tint background, `rounded-[1.25rem]`, padding 1.25rem 1.5rem.
 - **Series card:** tint background, `rounded-[1.75rem]`; Figtree heading, a numbered list; links in accent, the current part in ink 600.
@@ -90,7 +90,7 @@ Mobile / from `md` (768px) up.
 
 ## Motion
 - Home page only: the greeting, intro, hiring line, links and photo rise in one after another (0.7s, 90ms apart).
-- Essay pages are still. No motion on `/record` or `/projects` either.
+- Essay pages are still. No motion on `/record` or the project pages either.
 - Everything sits inside `@media (prefers-reduced-motion: no-preference)`. CSS only, no JavaScript.
 
 ## Do

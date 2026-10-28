@@ -1,10 +1,7 @@
 ---
 title: Retro Black & White Game Pack
 standfirst: Windows Phone 7 and Android, 2011 to 2012. No longer available.
-years: 2011–2012
-summary: Three retro mini-games for Windows Phone 7 and Android. No longer available.
 description: Three retro mini-games for Windows Phone 7 and Android, made by Jasper Lammers in 2011 and 2012. No longer available.
-order: 3
 ---
 
 I wrote it to try out XNA, Microsoft's game framework, and to get something into the Windows Phone marketplace. It's three simple games in one app: Bouncy, a pong-like game against your phone or a friend; Snaily, based on snake; and Plankmen, based on the old seesaw game.

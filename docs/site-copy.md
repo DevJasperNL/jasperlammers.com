@@ -65,7 +65,7 @@ Also removed: the bare YouTube URL on the last line of a-map-of-existence and of
 >
 > Off the clock I go bouldering. If you challenge me to a board game, I won't say no.
 >
-> Essays · Record · Projects
+> Essays · Record
 
 Sources: freelance via DevJasper since 2022 (DAF, `record.yaml`); ".NET" is left to the Hiring line; games since primary school, bouldering, board games (devjasper.nl `site.ts`).
 
@@ -203,16 +203,6 @@ Elidan & Plantema stays out (`include: false`).
 |---|---|---|
 | Fontys | June 2011 | Bachelor's degree in computing and engineering, cum laude. |
 
-## Projects index (`/projects/`)
-
-> Projects
->
-> Three things I built, and what became of them.
-
-1. **Strategic RPS** (2014–2019). A multiplayer space strategy game in Java, built from scratch. A dormant prototype.
-2. **V.I.P. (Video Internet Pipeline)** (2011). My graduation project: a framework that spreads video processing over multiple computers.
-3. **Retro Black & White Game Pack** (2011–2012). Three retro mini-games for Windows Phone 7 and Android. No longer available.
-
 ## Strategic RPS (`/projects/strategic-rps/`)
 
 > Strategic RPS
@@ -289,16 +279,16 @@ No download link and no plans: the brief rules out a release promise.
 
 > Page not found
 >
-> This page doesn't exist, or it moved when the site was rebuilt. Try the [essays](/essays/), the [record](/record/) or the [projects](/projects/). Or start at the [home page](/).
+> This page doesn't exist, or it moved when the site was rebuilt. Try the [essays](/essays/) or the [record](/record/). Or start at the [home page](/).
 
 ## Navigation, footer and link texts
 
-- **Nav:** "Jasper Lammers" (links home) · Essays · Record · Projects. The current page is marked.
+- **Nav:** "Jasper Lammers" (links home) · Essays · Record. The current page is marked.
 - **Skip link:** "Skip to content"
 - **Footer:** © Jasper Lammers · GitHub · LinkedIn · DEV.to
-- **Home links:** Essays · Record · Projects. Hiring line links "devjasper.nl".
+- **Home links:** Essays · Record. Hiring line links "devjasper.nl".
 - **Essay page:** provenance link "openminddough.com"; back link "← All essays"; series list as in "Series navigation".
-- **Project page:** back link "← All projects".
+- **Project page:** back link "← Record". The project pages have no index; `/record/` links them (`/projects/` redirects there since 2026-10-28).
 - **`/essays/`:** RSS link "RSS" (in "New essays: RSS").
 - **`/record/`:** entry titles link to their target; CodeProject articles add "archived copy" (Wayback).
 
@@ -308,10 +298,9 @@ Pattern: "Page | Jasper Lammers"; home is just the name. `og:title` and `og:desc
 
 | Page | Title | Meta description |
 |---|---|---|
-| `/` | Jasper Lammers | Jasper Lammers builds software for a living and writes essays about existence and consciousness. Essays, projects and a dated record of work. |
+| `/` | Jasper Lammers | Jasper Lammers builds software for a living and writes essays about existence and consciousness. Essays and a dated record of work. |
 | `/essays/` | Essays \| Jasper Lammers | Thirteen essays by Jasper Lammers on existence, consciousness and identity, written between 2018 and 2025. Start with A Map of Existence. |
 | `/record/` | Record \| Jasper Lammers | A dated record of what Jasper Lammers built and wrote since 2004: open source, articles, projects and work. |
-| `/projects/` | Projects \| Jasper Lammers | Three projects by Jasper Lammers: Strategic RPS, the V.I.P. graduation project and the Retro Black & White Game Pack. |
 | `/projects/strategic-rps/` | Strategic RPS \| Jasper Lammers | Strategic RPS, a multiplayer space strategy game built from scratch in Java by Jasper Lammers. A dormant prototype, 2014 to 2019. |
 | `/projects/vip-graduation/` | V.I.P. (Video Internet Pipeline) \| Jasper Lammers | V.I.P., Jasper Lammers' graduation project at Memoria Media in 2011: a framework that spreads video processing over multiple computers. Thesis included. |
 | `/projects/retro-bw-game-pack/` | Retro Black & White Game Pack \| Jasper Lammers | Three retro mini-games for Windows Phone 7 and Android, made by Jasper Lammers in 2011 and 2012. No longer available. |
