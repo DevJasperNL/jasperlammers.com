@@ -24,7 +24,7 @@ The URL set is fixed (see `CLAUDE.md`). Nothing is added.
 
 | Page | Purpose | Content |
 |---|---|---|
-| `/` | Who Jasper is, in a few lines, and the way into the rest | Short who-I-am covering software, philosophy and the off-the-clock side (games, bouldering, board games); the "Hiring?" line near the top; links to essays and record |
+| `/` | Who Jasper is, in a few lines, and the way into the rest | Short who-I-am covering software, philosophy and the off-the-clock side (games, bouldering, calisthenics, hiking, psychology); the "Hiring?" line near the top; links to essays and record |
 | `/essays/` | A curated collection, not a feed | Intro, "Start here" order, colophon, RSS link |
 | `/essays/<slug>/` (13) | Long-form reading | Original text, original publication date, provenance line, series prev/next |
 | `/record/` | A dated record of things built and written | Generated from `record.yaml` plus the GitHub API (stars, releases); essays as one collection entry |

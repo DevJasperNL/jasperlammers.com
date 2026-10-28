@@ -10,7 +10,7 @@ export const home = {
   intro:
     "I build software for a living, freelance since 2022. I've been making games since primary school. At some point I started wondering why anything exists at all, and I wrote it down.",
   hiring: { text: 'Hiring a .NET freelancer?', linkText: 'devjasper.nl', href: 'https://devjasper.nl/' },
-  offClock: "Off the clock I go bouldering. If you challenge me to a board game, I won't say no.",
+  offClock: "Off the clock I go bouldering, train calisthenics and did my first hut-to-hut hike in Austria. If you want to talk about why people do what they do, I'm always up for that conversation.",
   photoAlt: 'Jasper Lammers, smiling, leaning back on an outdoor lounger in a blue shirt',
 };
 

@@ -63,11 +63,11 @@ Also removed: the bare YouTube URL on the last line of a-map-of-existence and of
 >
 > Hiring a .NET freelancer? → devjasper.nl
 >
-> Off the clock I go bouldering. If you challenge me to a board game, I won't say no.
+> Off the clock I go bouldering, train calisthenics and did my first hut-to-hut hike in Austria. If you want to talk about why people do what they do, I'm always up for that conversation.
 >
 > Essays · Record
 
-Sources: freelance via DevJasper since 2022 (DAF, `record.yaml`); ".NET" is left to the Hiring line; games since primary school, bouldering, board games (devjasper.nl `site.ts`).
+Sources: freelance via DevJasper since 2022 (DAF, `record.yaml`); ".NET" is left to the Hiring line; games since primary school, bouldering (devjasper.nl `site.ts`); calisthenics, first hut-to-hut hike (Filzmoos, Austria), psychology/conversation hook (interview with Jasper, 2026-10-28).
 
 ## Essays index (`/essays/`)
 
