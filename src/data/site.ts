@@ -116,10 +116,10 @@ export const essayMeta: Record<string, { title?: string; description: string }> 
 export const recordPage = {
   title: 'Record | Jasper Lammers',
   description:
-    'A dated record of what Jasper Lammers built and wrote since 2009: open source, articles, projects and work.',
+    'A dated record of what Jasper Lammers built and wrote since 2004: open source, articles, projects and work.',
   heading: 'Record',
   intro:
-    "What I built or wrote that left a trace, since 2009. Newest first, with dates, so you don't have to take my word for it.",
+    "What I built or wrote that left a trace, since 2004. Newest first, with dates, so you don't have to take my word for it.",
 };
 
 /**
@@ -146,6 +146,18 @@ export const recordCopy: Record<string, { title?: string; sentence: string }> = 
   'Retro Black & White Game Pack': {
     sentence: 'Three retro mini-games for Windows Phone 7 and Android. No longer available.',
   },
+  'Budget Toko and Filament Webshop': {
+    sentence:
+      'Two webshops I built and ran with a partner, one for gadgets and one for 3D printer filament. They made a profit, but not enough for the hours, so we stopped.',
+  },
+  'Media Mixer Featherlight': {
+    sentence:
+      'A free program to decode, mix, transform, encode and stream video. I built it as the first product of Video Mixing Company.',
+  },
+  'GameMaker games': {
+    sentence:
+      'Games I made in GameMaker between 14 and 18, which is how I learned to program. In 2015 I recovered a few and made a compilation video.',
+  },
   'V.I.P. (Video Internet Pipeline), graduation project': {
     title: 'V.I.P. (Video Internet Pipeline)',
     sentence: 'My graduation project at Memoria Media: a framework that spreads video processing over multiple computers.',
@@ -167,7 +179,7 @@ export const recordCopy: Record<string, { title?: string; sentence: string }> = 
 /** Article sentences that differ from the default "On <platform>." / "On CodeProject (archived copy)." */
 export const articleSentences: Record<string, string> = {
   "How .NET's Math.Round has Nothing to do with Maths. And That's OK!":
-    'On CodeProject, where it reached number 3 in the top articles.',
+    'On CodeProject, where it reached number 2 in the top articles.',
 };
 
 export const projectsPage = {

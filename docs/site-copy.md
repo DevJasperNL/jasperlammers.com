@@ -12,6 +12,7 @@ Status: approved at the copy gate, 2026-10-26 (Phase 5 step 3, Copy). Chosen sec
 - **Project videos:** individual YouTube videos on the project pages may be linked (check during the build that they are still public). The personal channel itself is not linked.
 - **V.I.P. page:** mentions the cum laude degree and offers the thesis PDF and the ZIP with the (Dutch) appendices. The grades are not mentioned.
 - **Record career lines:** checked against LinkedIn by Jasper (2026-10-26).
+- **Dropped content re-evaluated (2026-10-28):** four lines came back on `/record` (Language differences in unexpected places; Budget Toko and Filament Webshop; Media Mixer Featherlight; GameMaker games), so the record starts in 2004. Math.Round reached number 2, not 3 (the 2019-01-14 post, edited 2019-01-25). School projects stay dropped. Strategic RPS keeps 2014–2019 although posts from 2020 and 2021 mention later work: the dates follow the public builds.
 - **Footer links:** GitHub, LinkedIn, DEV.to, plus "© Jasper Lammers". No email address, no RSS link in the footer (RSS lives on `/essays`).
 
 ### Essay text fixes (applied when the essays are copied in, build phase)
@@ -136,7 +137,7 @@ List labels are the essay subtitles (Part 1 has none, so it reads "Existence"; M
 
 > Record
 >
-> What I built or wrote that left a trace, since 2009. Newest first, with dates, so you don't have to take my word for it.
+> What I built or wrote that left a trace, since 2004. Newest first, with dates, so you don't have to take my word for it.
 
 Grouped by type, newest first within each group. One short sentence per entry. Articles only get their platform (and a note where there is one), because the title already says what they are about. Stars and merged-PR counts come from the GitHub API at build time; the numbers below are from 2026-10-26.
 
@@ -148,15 +149,16 @@ Grouped by type, newest first within each group. One short sentence per entry. A
 | I Retired My Hue Bridge. Here's How I Rebuilt Everything It Did (and More) in C# | 19 October 2026 | On DEV.to. |
 | Occurify: Fluent Time Modeling for .NET Developers | 5 April 2025 | On DEV.to. |
 | Supercharging Home Assistant Automations: Initial States and Boolean Logic for NetDaemon Rx | 28 January 2025 | On DEV.to. |
+| Language differences in unexpected places | 4 March 2021 | On jasperlammers.com (archived copy). |
 | Flexible Tado Schedules using Home Assistant and Node-RED | 19 May 2022 | On CodeProject (archived copy). |
-| How .NET's Math.Round has Nothing to do with Maths. And That's OK! | 23 December 2018 | On CodeProject, where it reached number 3 in the top articles. |
+| How .NET's Math.Round has Nothing to do with Maths. And That's OK! | 23 December 2018 | On CodeProject, where it reached number 2 in the top articles. |
 | The false sense of security in the ING Bankieren (Banking) App | 18 June 2018 | On LinkedIn. |
 | Continued code execution after (throwing) an Exception | 21 December 2017 | On CodeProject (archived copy). |
 | Retaining (and altering) key functions when using Console.ReadKey() | 5 June 2017 | On CodeProject (archived copy). |
 | Multithreaded UI in Windows Console Applications | 3 May 2017 | On CodeProject (archived copy). |
 | Using Autocomplete in Windows Console Applications | 16 April 2017 | On CodeProject (archived copy). |
 
-"archived copy" links the first Wayback capture (CodeProject is a parked domain now).
+"archived copy" links the first Wayback capture (CodeProject is a parked domain now; the old jasperlammers.com is replaced by this site).
 
 ### Open source
 
@@ -176,8 +178,11 @@ Stars are shown only when there are any. Sentences are based on each repo's GitH
 | Entry | Date | Sentence |
 |---|---|---|
 | Strategic RPS → /projects/strategic-rps | 2014–2019 | A multiplayer space strategy game in Java, built from scratch. A playable prototype, dormant since 2019. |
+| Budget Toko and Filament Webshop → archived Filament Webshop page | 2013–2015 | Two webshops I built and ran with a partner, one for gadgets and one for 3D printer filament. They made a profit, but not enough for the hours, so we stopped. |
 | Retro Black & White Game Pack → /projects/retro-bw-game-pack | 2011–2012 | Three retro mini-games for Windows Phone 7 and Android. No longer available. |
+| Media Mixer Featherlight (no link) | December 2011 | A free program to decode, mix, transform, encode and stream video. I built it as the first product of Video Mixing Company. |
 | V.I.P. (Video Internet Pipeline) → /projects/vip-graduation | June 2011 | My graduation project at Memoria Media: a framework that spreads video processing over multiple computers. |
+| GameMaker games → compilation video on YouTube | 2004–2007 | Games I made in GameMaker between 14 and 18, which is how I learned to program. In 2015 I recovered a few and made a compilation video. |
 
 ### Work
 
@@ -305,7 +310,7 @@ Pattern: "Page | Jasper Lammers"; home is just the name. `og:title` and `og:desc
 |---|---|---|
 | `/` | Jasper Lammers | Jasper Lammers builds software for a living and writes essays about existence and consciousness. Essays, projects and a dated record of work. |
 | `/essays/` | Essays \| Jasper Lammers | Thirteen essays by Jasper Lammers on existence, consciousness and identity, written between 2018 and 2025. Start with A Map of Existence. |
-| `/record/` | Record \| Jasper Lammers | A dated record of what Jasper Lammers built and wrote since 2009: open source, articles, projects and work. |
+| `/record/` | Record \| Jasper Lammers | A dated record of what Jasper Lammers built and wrote since 2004: open source, articles, projects and work. |
 | `/projects/` | Projects \| Jasper Lammers | Three projects by Jasper Lammers: Strategic RPS, the V.I.P. graduation project and the Retro Black & White Game Pack. |
 | `/projects/strategic-rps/` | Strategic RPS \| Jasper Lammers | Strategic RPS, a multiplayer space strategy game built from scratch in Java by Jasper Lammers. A dormant prototype, 2014 to 2019. |
 | `/projects/vip-graduation/` | V.I.P. (Video Internet Pipeline) \| Jasper Lammers | V.I.P., Jasper Lammers' graduation project at Memoria Media in 2011: a framework that spreads video processing over multiple computers. Thesis included. |
